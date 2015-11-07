@@ -9,3 +9,4 @@ let g:clang_library_path = '/usr/lib/llvm-3.4/lib/libclang.so.1'
 
 let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
 let g:clang_cpp_completeopt = 'longest,menuone'
+let g:clang_exec = 'clang-3.6'

@@ -11,6 +11,9 @@ highlight Folded ctermfg=243
 highlight Pmenu ctermbg=233
 highlight Pmenu ctermfg=15
 
+set background=dark
+colorscheme me_colors
+
 let g:rehash256 = 1
 let g:mapleader = " "
 
@@ -27,6 +30,7 @@ set showcmd
 set list listchars=tab:\ \ ,trail:·
 set nofoldenable
 set wildmode=full
+set noshowmode
 
 nnoremap <S-t> :tabnew<CR>
 nnoremap <S-h> :tabprevious<CR>

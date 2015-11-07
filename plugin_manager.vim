@@ -21,5 +21,4 @@ source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/riv_config.vim
 source ~/.config/nvim/plugin_config/clang_config.vim
-source ~/.config/nvim/plugin_config/vim_kalisi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
