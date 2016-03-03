@@ -1,40 +1,29 @@
-"let g:python3_host_prog = '/usr/bin/python3'
-"let g:python_host_prog = '/usr/bin/python3'
-
-filetype plugin indent on
-filetype plugin on
-filetype indent on
-syntax on
-
 highlight Folded ctermbg=234
 highlight Folded ctermfg=243
 highlight Pmenu ctermbg=233
 highlight Pmenu ctermfg=15
 
-set background=dark
-colorscheme me_colors
+let g:mapleader=" "
 
-let g:rehash256 = 1
-let g:mapleader = " "
+set omnifunc=syntaxcomplete#Complete
 
 set number
-set autochdir
 set ruler
+set cursorline
+
 set ts=4
 set expandtab
 set shiftwidth=4
-set cursorline
+
 set showmatch
 set ignorecase
-set showcmd
+
 set list listchars=tab:\ \ ,trail:·
-set nofoldenable
 set wildmode=full
-set noshowmode
+set autochdir
+set showcmd
 
 nnoremap <S-t> :tabnew<CR>
-nnoremap <S-h> :tabprevious<CR>
-nnoremap <S-l> :tabnext<CR>
 nnoremap + :vertical resize +10<CR>
 nnoremap - :vertical resize -10<CR>
 
@@ -58,3 +47,6 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>r :so %<CR>
 nnoremap <C-l> :nohlsearch<CR>
+
+nnoremap gr gT<CR>
+nnoremap <Backspace> ^
