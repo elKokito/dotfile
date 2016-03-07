@@ -1,8 +1,8 @@
 #!/bin/sh
-sudo apt-get install i3 xorg gnome-terminal libxss1 libappindicator1 libindicator7 -y
+sudo apt-get install xorg i3 gnome-terminal libxss1 libappindicator1 libindicator7 -y
 
 wget -P /tmp https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -I /tmp/google-chrome-stable_current_amd64.deb -y
+sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
 curl -L https://github.com.com/elKokito/dotfile/tree/master/rcfiles/.xmodmap > $HOME/.xmodmap
 
