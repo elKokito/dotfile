@@ -20,10 +20,12 @@ Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
+Plug 'https://github.com/wellle/targets.vim.git'
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
+Plug 'https://github.com/ryanoasis/vim-devicons.git'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 

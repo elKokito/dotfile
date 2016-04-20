@@ -5,22 +5,31 @@ font pango:Anonymice 9
 
 floating_modifier $mod
 
-bindsym $mod+Return exec gnome-terminal
-bindsym $mod+c exec google-chrome
-
+# start kill
 bindsym $mod+Delete kill
-
 bindsym $mod+r exec dmenu_run
 
 # touchpad enable disabled
 bindsym $mod+Ctrl+0 exec xinput set-prop 11 "Device Enabled" 0
 bindsym $mod+Ctrl+1 exec xinput set-prop 11 "Device Enabled" 1
 
-# control volum
+# backlight
+bindsym $mod+Up exec xbacklight -inc 20
+bindsym $mod+Down exec xbacklight -dec 20
+
+# control volume
 bindsym XF86AudioRaiseVolume exec amixer 1 sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer 1 sset Master 5%-
 bindsym XF86AudioMute exec amixer -c 1 sset Master unmute
 
+# common application
+bindsym $mod+Return exec gnome-terminal
+bindsym $mod+b exec firefox
+bindsym $mod+z exec zathura
+
+# scratchpad
+bindsym $mod+Shift+space move scratchpad
+bindsym $mod+space scratchpad show
 
 # change focus
 bindsym $mod+h focus left
@@ -46,12 +55,6 @@ bindsym $mod+d focus child
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+a layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
 
 
 # focus the child container
@@ -140,3 +143,8 @@ bar {
      status_command i3status -c ~/.i3/i3status.conf
 }
 client.focused #156fa9 #010101 #156fa9 #ffffff
+new_window none
+
+exec --no-startup-id xmodmap ~/.xmodmap
+exec --no-startup-id feh --bg-scale '/home/koki/Pictures/zen_monk-wallpaper-1920x1080.jpg'
+exec --no-startup-id dropbox start &
