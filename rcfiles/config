@@ -15,7 +15,9 @@ bindsym $mod+Ctrl+1 exec xinput set-prop 11 "Device Enabled" 1
 
 # backlight
 bindsym $mod+Up exec xbacklight -inc 20
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym $mod+Down exec xbacklight -dec 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # control volume
 bindsym XF86AudioRaiseVolume exec amixer 1 sset Master 5%+
@@ -26,6 +28,7 @@ bindsym XF86AudioMute exec amixer -c 1 sset Master unmute
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+b exec firefox
 bindsym $mod+z exec zathura
+#bindcode 133 exec gnome-terminal -e 'ranger'
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
@@ -51,7 +54,7 @@ bindsym $mod+o split horizontal
 bindsym $mod+u focus parent
 bindsym $mod+d focus child
 
-# change container layout (stacked, tabbed, toggle split)
+# change container layout (tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+a layout toggle split

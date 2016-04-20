@@ -1,5 +1,6 @@
 export TERM='xterm-256color'
 export EDITOR='nvim'
+export PATH="$PATH:$HOME/.local/bin"
 
 source $HOME/.antigen.zsh
 
