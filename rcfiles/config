@@ -28,7 +28,7 @@ bindsym XF86AudioMute exec amixer -c 1 sset Master unmute
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+b exec firefox
 bindsym $mod+z exec zathura
-bindsym $mod+f exec ~/.i3/file_ranger.sa
+bindsym $mod+f exec ~/.i3/file_ranger.sh
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
