@@ -14,7 +14,8 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle virtualenv
-antigen theme gnzh
+#antigen theme gnzh
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
 if [ -d "$HOME/bin" ] ; then

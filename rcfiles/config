@@ -20,9 +20,12 @@ bindsym $mod+Down exec xbacklight -dec 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # control volume
-bindsym XF86AudioRaiseVolume exec amixer 1 sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer 1 sset Master 5%-
-bindsym XF86AudioMute exec amixer -c 1 sset Master unmute
+bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
+bindsym 69 exec amixer sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym 68 exec amixer sset Master 5%-
+bindsym XF86AudioMute exec amixer sset Master unmute
+bindsym 67 exec amixer sset Master unmute
 
 # common application
 bindsym $mod+Return exec gnome-terminal
