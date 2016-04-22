@@ -20,11 +20,11 @@ bindsym $mod+Down exec xbacklight -dec 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # control volume
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
+bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
 bindsym 69 exec amixer sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioLowerVolume exec amixer -c1 sset Master 5%-
 bindsym 68 exec amixer sset Master 5%-
-bindsym XF86AudioMute exec amixer sset Master unmute
+bindsym XF86AudioMute exec amixer -c1 sset Master unmute
 bindsym 67 exec amixer sset Master unmute
 
 # common application
@@ -36,7 +36,10 @@ bindsym $mod+p exec gnome-terminal -e ~/.local/bin/bpython
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
+
 bindsym $mod+space scratchpad show
+bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
+bindsym $mod+q [title="^koki@sudo.*"] scratchpad show
 
 # change focus
 bindsym $mod+h focus left
@@ -149,4 +152,5 @@ new_window none
 
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id feh --bg-scale '/home/koki/Pictures/zen_monk-wallpaper-1920x1080.jpg'
+exec --no-starup-id sh ~/.localsettings.sh
 exec --no-startup-id dropbox start &

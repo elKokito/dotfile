@@ -14,7 +14,6 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle virtualenv
-#antigen theme gnzh
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
@@ -23,7 +22,9 @@ if [ -d "$HOME/bin" ] ; then
     fpath=(~/bin/completion $fpath)
 fi
 
+if [ -f "$HOME/.localsettings.sh" ]; then
+    sh $HOME/.localsettings.sh
+fi
+
 autoload -U compinit
 compinit
-
-feh --bg-scale /home/koki/Pictures/zen_monk-wallpaper-1920x1080.jpg
