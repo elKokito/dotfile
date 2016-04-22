@@ -40,7 +40,6 @@ source ~/.config/nvim/plugin_config/clang_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/tagbar_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
-source ~/.config/nvim/plugin_config/flake8_config.vim
 source ~/.config/nvim/plugin_config/js.vim
 
 colo jellybeans

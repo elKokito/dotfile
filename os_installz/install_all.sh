@@ -3,7 +3,7 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt-get update
 
-sudo apt-get install zsh ctags tmux -y
+sudo apt-get install zsh ctags tmux xclip -y
 
 sudo apt-get install neovim w3m w3m-img
 
