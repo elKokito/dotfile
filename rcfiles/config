@@ -40,6 +40,7 @@ bindsym $mod+Shift+space move scratchpad
 bindsym $mod+space scratchpad show
 bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
 bindsym $mod+q [title="^koki@sudo.*"] scratchpad show
+bindsym $mod+m [title="hangups"] scratchpad show
 
 # change focus
 bindsym $mod+h focus left
