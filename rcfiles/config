@@ -21,11 +21,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # control volume
 bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
-bindsym 69 exec amixer sset Master 5%+
+bindcode 69 exec amixer sset Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -c1 sset Master 5%-
-bindsym 68 exec amixer sset Master 5%-
+bindcode 68 exec amixer sset Master 5%-
 bindsym XF86AudioMute exec amixer -c1 sset Master unmute
-bindsym 67 exec amixer sset Master unmute
+bindcode 67 exec amixer sset Master unmute
 
 # common application
 bindsym $mod+Return exec gnome-terminal
@@ -39,7 +39,7 @@ bindsym $mod+Shift+space move scratchpad
 
 bindsym $mod+space scratchpad show
 bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
-bindsym $mod+q [title="^koki@sudo.*"] scratchpad show
+bindsym $mod+q [title="^koki@*"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
 
 # change focus
