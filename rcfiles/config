@@ -41,6 +41,7 @@ bindsym $mod+space scratchpad show
 bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
 bindsym $mod+q [title="^koki@*"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
+bindsym $mod+e [title="bpython"] scratchpad show
 
 # change focus
 bindsym $mod+h focus left
