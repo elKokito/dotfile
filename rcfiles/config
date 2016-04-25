@@ -10,8 +10,8 @@ bindsym $mod+Delete kill
 bindsym $mod+r exec dmenu_run
 
 # touchpad enable disabled
-bindsym $mod+Ctrl+0 exec xinput set-prop 11 "Device Enabled" 0
-bindsym $mod+Ctrl+1 exec xinput set-prop 11 "Device Enabled" 1
+#bindsym $mod+Ctrl+Shift+0 exec xinput set-prop 11 "Device Enabled" 0
+#bindsym $mod+Ctrl+Shift+1 exec xinput set-prop 11 "Device Enabled" 1
 
 # backlight
 bindsym $mod+Up exec xbacklight -inc 20
@@ -33,15 +33,38 @@ bindsym $mod+b exec firefox
 bindsym $mod+z exec zathura
 bindsym $mod+f exec export EDITOR='nvim' && gnome-terminal -e ranger
 bindsym $mod+p exec gnome-terminal -e ~/.local/bin/bpython
+bindsym $mod+i exec i3-input
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
 
-bindsym $mod+space scratchpad show
+bindsym $mod+Tab scratchpad show
 bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
 bindsym $mod+q [title="^koki@*"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
 bindsym $mod+e [title="bpython"] scratchpad show
+
+# marks
+bindsym $mod+Ctrl+Shift+0 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+0 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+1 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+1 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+2 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+2 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+3 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+3 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+4 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+4 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+5 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+5 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+6 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+6 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+7 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+7 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+8 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+8 [con_mark="alpha"] scratchpad show
+bindsym $mod+Ctrl+Shift+9 mark "alpha", move scratchpad
+bindsym $mod+Ctrl+9 [con_mark="alpha"] scratchpad show
 
 # change focus
 bindsym $mod+h focus left
