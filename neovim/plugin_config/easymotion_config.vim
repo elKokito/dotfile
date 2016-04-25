@@ -6,6 +6,15 @@ nmap <leader>k <Plug>(easymotion-k)
 nmap <leader>w <Plug>(easymotion-w)
 nmap <leader>b <Plug>(easymotion-b)
 nmap <leader>ge <Plug>(easymotion-ge)
+
+vmap <leader>f <Plug>(easymotion-f)
+vmap <leader>F <Plug>(easymotion-F)
+vmap <leader>j <Plug>(easymotion-j)
+vmap <leader>k <Plug>(easymotion-k)
+vmap <leader>w <Plug>(easymotion-w)
+vmap <leader>b <Plug>(easymotion-b)
+vmap <leader>ge <Plug>(easymotion-ge)
+
 map / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
