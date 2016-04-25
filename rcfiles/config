@@ -151,6 +151,8 @@ bar {
 }
 client.focused #156fa9 #010101 #156fa9 #ffffff
 new_window none
+mouse_warping none
+focus_follows_mouse no
 
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id feh --bg-scale '/home/koki/Pictures/zen_monk-wallpaper-1920x1080.jpg'
