@@ -10,8 +10,8 @@ bindsym $mod+Delete kill
 bindsym $mod+r exec dmenu_run
 
 # touchpad enable disabled
-#bindsym $mod+Ctrl+Shift+0 exec xinput set-prop 11 "Device Enabled" 0
-#bindsym $mod+Ctrl+Shift+1 exec xinput set-prop 11 "Device Enabled" 1
+bindsym $mod+plus exec xinput set-prop 11 "Device Enabled" 1
+bindsym $mod+minus exec xinput set-prop 11 "Device Enabled" 0
 
 # backlight
 bindsym $mod+Up exec xbacklight -inc 20
