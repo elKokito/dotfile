@@ -29,7 +29,7 @@ bindcode 67 exec amixer sset Master unmute
 
 # common application
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+b exec firefox
+bindsym $mod+b exec google-chrome
 bindsym $mod+z exec zathura
 bindsym $mod+f exec export EDITOR='nvim' && gnome-terminal -e ranger
 bindsym $mod+p exec gnome-terminal -e ~/.local/bin/bpython
@@ -39,10 +39,8 @@ bindsym $mod+i exec i3-input
 bindsym $mod+Shift+space move scratchpad
 
 bindsym $mod+Tab scratchpad show
-bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
-bindsym $mod+q [title="^koki@*"] scratchpad show
+bindsym $mod+y [title="YouTube"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
-bindsym $mod+e [title="bpython"] scratchpad show
 
 # marks
 bindsym $mod+Ctrl+Shift+0 mark "alpha", move scratchpad
