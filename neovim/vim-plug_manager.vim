@@ -25,6 +25,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'https://github.com/benekastah/neomake.git'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
