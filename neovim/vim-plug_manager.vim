@@ -28,6 +28,7 @@ Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'https://github.com/scrooloose/syntastic.git'
 Plug 'https://github.com/benekastah/neomake.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'https://github.com/rking/ag.vim.git'
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
@@ -46,6 +47,7 @@ source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/syntastic.vim
 source ~/.config/nvim/plugin_config/neomake.vim
+source ~/.config/nvim/plugin_config/ag.vim
 
 colo jellybeans
 

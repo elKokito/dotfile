@@ -15,11 +15,11 @@ set showmatch
 set ignorecase
 set list listchars=tab:\ \ ,trail:·
 set wildmode=full
-set autochdir
+"set autochdir
 set showcmd
 
 "filetype plugin indent on
-autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * lcd %:p:h
 
 nnoremap <S-t> :tabnew<CR>
 nnoremap + :vertical resize +10<CR>
