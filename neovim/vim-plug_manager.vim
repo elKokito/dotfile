@@ -48,6 +48,7 @@ source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/syntastic.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/ag.vim
+source ~/.config/nvim/plugin_config/fzf.vim
 
 colo jellybeans
 

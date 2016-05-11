@@ -4,3 +4,4 @@ let g:NERDTreeAutoCenter = 1
 let g:NERDTreeQuitOnOpen = 1
 
 nnoremap <Tab> :NERDTreeToggle<CR>
+nnoremap <S-Tab> :NERDTreeFind<CR>
