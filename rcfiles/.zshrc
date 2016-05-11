@@ -2,6 +2,7 @@ export TERM='xterm-256color'
 export EDITOR='nvim'
 export PATH="$PATH:$HOME/.local/bin"
 export SHELL='zsh'
+export NVIM_LISTEN_ADDRESS="/tmp/nvimla"
 
 source $HOME/.antigen.zsh
 
@@ -27,8 +28,10 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -f "$HOME/.localsettings.sh" ]; then
-    sh $HOME/.localsettings.sh
+    . $HOME/.localsettings.sh
 fi
 
 autoload -U compinit
 compinit
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

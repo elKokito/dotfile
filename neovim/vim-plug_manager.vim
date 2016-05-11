@@ -20,11 +20,14 @@ Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
 
 Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'https://github.com/scrooloose/syntastic.git'
+Plug 'https://github.com/benekastah/neomake.git'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
@@ -42,8 +45,11 @@ source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/syntastic.vim
+source ~/.config/nvim/plugin_config/neomake.vim
 
 colo jellybeans
+
+let g:jellybeans_use_term_italics = 1
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 

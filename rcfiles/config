@@ -42,7 +42,6 @@ bindsym $mod+Tab scratchpad show
 bindsym $mod+y [title="YouTube"] scratchpad show
 bindsym $mod+q [title="^koki@*"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
-bindsym $mod+e [title="bpython"] scratchpad show
 
 # marks
 bindsym $mod+Ctrl+Shift+0 mark "alpha", move scratchpad
