@@ -2,7 +2,8 @@ export TERM='xterm-256color'
 export EDITOR='nvim'
 export PATH="$PATH:$HOME/.local/bin"
 export SHELL='zsh'
-export NVIM_LISTEN_ADDRESS="/tmp/nvimla"
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND='ag -g ""'
 
 source $HOME/.antigen.zsh
 
@@ -22,6 +23,7 @@ antigen bundle soimort/translate-shell
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
+
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
     fpath=(~/bin/completion $fpath)

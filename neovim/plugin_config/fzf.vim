@@ -1,1 +1,1 @@
-nnoremap <leader>g :FZF<CR>
+nnoremap <leader>g :FZF!<CR>
