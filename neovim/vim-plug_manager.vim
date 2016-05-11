@@ -23,11 +23,14 @@ Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
+Plug 'https://github.com/tpope/vim-sleuth.git'
+Plug 'https://github.com/scrooloose/syntastic.git'
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
+Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 
 
 call plug#end()
@@ -38,7 +41,10 @@ source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/js.vim
+source ~/.config/nvim/plugin_config/syntastic.vim
 
 colo jellybeans
+hi Normal ctermbg=none
+hi NonText ctermbg=none
 
 let g:deoplete#enable_at_startup = 1

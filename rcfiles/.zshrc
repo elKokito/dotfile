@@ -1,6 +1,7 @@
 export TERM='xterm-256color'
 export EDITOR='nvim'
 export PATH="$PATH:$HOME/.local/bin"
+export SHELL='zsh'
 
 source $HOME/.antigen.zsh
 
@@ -14,6 +15,8 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle virtualenv
+antigen bundle soimort/translate-shell
+antigen bundle jocelynmallon/zshmarks
 antigen bundle soimort/translate-shell
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 

@@ -29,9 +29,9 @@ bindcode 67 exec amixer sset Master unmute
 
 # common application
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+b exec firefox
+bindsym $mod+b exec google-chrome
 bindsym $mod+z exec zathura
-bindsym $mod+f exec export EDITOR='nvim' && gnome-terminal -e ranger
+bindsym $mod+f exec export EDITOR='nvim' && export SHELL='zsh' && gnome-terminal -e ranger
 bindsym $mod+p exec gnome-terminal -e ~/.local/bin/bpython
 bindsym $mod+i exec i3-input
 
@@ -39,7 +39,7 @@ bindsym $mod+i exec i3-input
 bindsym $mod+Shift+space move scratchpad
 
 bindsym $mod+Tab scratchpad show
-bindsym $mod+y [title="YouTube - Mozilla Firefox"] scratchpad show
+bindsym $mod+y [title="YouTube"] scratchpad show
 bindsym $mod+q [title="^koki@*"] scratchpad show
 bindsym $mod+m [title="hangups"] scratchpad show
 bindsym $mod+e [title="bpython"] scratchpad show
@@ -57,8 +57,8 @@ bindsym $mod+Ctrl+Shift+4 mark "epsilon", move scratchpad
 bindsym $mod+Ctrl+4 [con_mark="epsilon"] scratchpad show
 bindsym $mod+Ctrl+Shift+5 mark "zeta", move scratchpad
 bindsym $mod+Ctrl+5 [con_mark="zeta"] scratchpad show
-bindsym $mod+Ctrl+Shift+6 mark "eta", move scratchpad
-bindsym $mod+Ctrl+6 [con_mark="eta"] scratchpad show
+bindsym $mod+Ctrl+Shift+6 mark "omega", move scratchpad
+bindsym $mod+Ctrl+6 [con_mark="omega"] scratchpad show
 bindsym $mod+Ctrl+Shift+7 mark "theta", move scratchpad
 bindsym $mod+Ctrl+7 [con_mark="theta"] scratchpad show
 bindsym $mod+Ctrl+Shift+8 mark "iota", move scratchpad
@@ -87,6 +87,7 @@ bindsym $mod+d focus child
 bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+a layout toggle split
+bindsym $mod+Shift+i floating toggle
 
 
 # focus the child container
@@ -178,6 +179,6 @@ mouse_warping none
 focus_follows_mouse no
 
 exec --no-startup-id xmodmap ~/.xmodmap
-exec --no-startup-id feh --bg-scale '/home/koki/Pictures/zen_monk-wallpaper-1920x1080.jpg'
+exec --no-startup-id feh --bg-scale "/home/unito/Pictures/zen_monk-wallpaper-1920x1080.jpg"
 exec --no-starup-id sh ~/.localsettings.sh
 exec --no-startup-id dropbox start &

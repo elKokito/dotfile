@@ -10,18 +10,16 @@ set omnifunc=syntaxcomplete#Complete
 set number
 set ruler
 set cursorline
-
-set ts=4
 set expandtab
-set shiftwidth=4
-
 set showmatch
 set ignorecase
-
 set list listchars=tab:\ \ ,trail:·
 set wildmode=full
 set autochdir
 set showcmd
+
+"filetype plugin indent on
+autocmd BufEnter * lcd %:p:h
 
 nnoremap <S-t> :tabnew<CR>
 nnoremap + :vertical resize +10<CR>
