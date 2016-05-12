@@ -41,9 +41,6 @@ nnoremap <leader>] mmo<ESC>'m
 nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>r :so %<CR>
 nnoremap <C-l> :nohlsearch<CR>
 
 nnoremap gr gT<CR>

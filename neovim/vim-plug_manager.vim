@@ -11,7 +11,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 " deoplete python completion
 Plug 'zchee/deoplete-jedi'
 " deoplete typescript completion
-Plug 'https://github.com/Shougo/vimproc.vim.git'
+Plug 'https://github.com/Shougo/vimproc.vim.git', { 'do': 'make' }
 Plug 'https://github.com/Quramy/tsuquyomi.git'
 
 Plug 'https://github.com/nvie/vim-flake8.git'
@@ -29,6 +29,7 @@ Plug 'https://github.com/scrooloose/syntastic.git'
 Plug 'https://github.com/benekastah/neomake.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
