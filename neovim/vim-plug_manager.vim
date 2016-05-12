@@ -25,7 +25,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
-Plug 'https://github.com/scrooloose/syntastic.git'
 Plug 'https://github.com/benekastah/neomake.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -35,7 +34,6 @@ Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
-Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 
 
 call plug#end()
@@ -46,7 +44,6 @@ source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/js.vim
-source ~/.config/nvim/plugin_config/syntastic.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 
