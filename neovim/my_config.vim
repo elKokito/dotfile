@@ -42,6 +42,7 @@ nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 
 nnoremap <C-l> :nohlsearch<CR>
+nnoremap <C-p> <C-i>
 
 nnoremap gr gT<CR>
 nnoremap <Backspace> ^
