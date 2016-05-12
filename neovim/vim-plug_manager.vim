@@ -18,6 +18,7 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
