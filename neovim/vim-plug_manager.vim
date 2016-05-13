@@ -52,6 +52,9 @@ colo jellybeans
 
 let g:jellybeans_use_term_italics = 1
 hi Normal ctermbg=none
+hi Normal cterm=none
 hi NonText ctermbg=none
+hi Normal guibg=none
+hi NonText guibg=none
 
 let g:deoplete#enable_at_startup = 1

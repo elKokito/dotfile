@@ -15,7 +15,7 @@ set showmatch
 set ignorecase
 set list listchars=tab:\ \ ,trail:·
 set wildmode=full
-"set autochdir
+set termguicolors
 set showcmd
 
 "filetype plugin indent on
