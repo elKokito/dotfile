@@ -56,5 +56,10 @@ hi Normal cterm=none
 hi NonText ctermbg=none
 hi Normal guibg=none
 hi NonText guibg=none
+hi LineBr ctermbg=none
+hi LineBr ctermfg=grey
+hi LineNr guibg=none
+hi signcolumn guibg=none
+let g:gitgutter_override_sign_column_highlight = 0
 
 let g:deoplete#enable_at_startup = 1

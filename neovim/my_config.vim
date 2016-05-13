@@ -46,3 +46,11 @@ nnoremap <C-p> <C-i>
 
 nnoremap gr gT<CR>
 nnoremap <Backspace> ^
+hi Normal ctermbg=none
+hi Normal cterm=none
+hi NonText ctermbg=none
+hi Normal guibg=none
+hi NonText guibg=none
+hi LineBr ctermbg=none
+hi LineBr ctermfg=grey
+hi LineNr guibg=none
