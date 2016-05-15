@@ -88,19 +88,6 @@ bindsym $mod+a layout toggle split
 bindsym $mod+Shift+i floating toggle
 
 
-# focus the child container
-#bindsym $mod+d focus child
-workspace 1 output VGA1
-workspace 2 output VGA1
-workspace 3 output VGA1
-workspace 4 output VGA1
-workspace 5 output VGA1
-workspace 6 output HDMI2
-workspace 7 output HDMI2
-workspace 8 output HDMI2
-workspace 9 output HDMI2
-workspace 10 output HDMI2
-
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2

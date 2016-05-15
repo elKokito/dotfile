@@ -35,6 +35,7 @@ Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
+Plug 'crusoexia/vim-monokai'
 
 
 call plug#end()
@@ -48,7 +49,13 @@ source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 
-colo jellybeans
+autocmd BufEnter * colo jellybeans
+autocmd BufEnter *.js colo monokai
+autocmd BufEnter *.py colo kalisi
+
+set background=dark
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
 let g:jellybeans_use_term_italics = 1
 hi Normal ctermbg=none
