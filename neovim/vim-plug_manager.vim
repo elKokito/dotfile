@@ -17,7 +17,9 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
+
 Plug 'airblade/vim-gitgutter'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
@@ -49,6 +51,7 @@ source ~/.config/nvim/plugin_config/fzf.vim
 
 colo monokai
 autocmd BufEnter *.py colo kalisi
+autocmd BufEnter *.ts set syntax=typescript
 
 set background=dark
 let g:monokai_term_italic = 1
