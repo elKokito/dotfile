@@ -10,6 +10,8 @@ source $HOME/.antigen.zsh
 alias nvimrc="nvim ~/.config/nvim/my_config.vim"
 alias nvimp="nvim ~/.config/nvim/vim-plug_manager.vim"
 alias zshrc="nvim ~/.zshrc"
+alias t="tig status"
+alias j="jump"
 
 antigen use oh-my-zsh
 

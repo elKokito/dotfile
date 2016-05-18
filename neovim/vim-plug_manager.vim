@@ -12,7 +12,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-jedi'
 " deoplete typescript completion
 Plug 'https://github.com/Shougo/vimproc.vim.git', { 'do': 'make' }
-Plug 'https://github.com/Quramy/tsuquyomi.git'
 
 Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
@@ -25,7 +24,6 @@ Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
-Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'https://github.com/benekastah/neomake.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -49,8 +47,7 @@ source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 
-autocmd BufEnter * colo jellybeans
-autocmd BufEnter *.js colo monokai
+colo monokai
 autocmd BufEnter *.py colo kalisi
 
 set background=dark
