@@ -22,3 +22,9 @@ let s:tslint_path = system('PATH=$(npm bin):$PATH && which tslint')
 let g:neomake_typescript_tslint_exe = substitute(s:tslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 
 autocmd BufWrite *.ts Neomake tslint
+
+
+" jsx settings
+let g:neomake_open_list=0
+let g:neomake_jsx_enabled_makers = ['eslint']
+autocmd BufWrite *.jsx Neomake eslint
