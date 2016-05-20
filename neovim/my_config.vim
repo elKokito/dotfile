@@ -45,6 +45,10 @@ nnoremap <C-p> <C-i>
 
 nnoremap gr gT<CR>
 nnoremap <Backspace> ^
+
+nnoremap <leader>n :cn<CR>
+nnoremap <leader>p :cp<CR>
+
 hi Normal ctermbg=none
 hi Normal cterm=none
 hi NonText ctermbg=none
