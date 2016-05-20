@@ -22,7 +22,9 @@ antigen bundle virtualenv
 antigen bundle soimort/translate-shell
 antigen bundle jocelynmallon/zshmarks
 antigen bundle soimort/translate-shell
-antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
 antigen apply
 
