@@ -9,7 +9,6 @@ set omnifunc=syntaxcomplete#Complete
 
 set number
 set ruler
-set cursorline
 set expandtab
 set showmatch
 set ignorecase
