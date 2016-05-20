@@ -16,20 +16,6 @@ alias gs="git status --short"
 alias gp="git pull"
 alias gcm="git commit -m"
 
-antigen use oh-my-zsh
-
-#antigen bundle git
-antigen bundle command-not-found
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle virtualenv
-antigen bundle soimort/translate-shell
-antigen bundle jocelynmallon/zshmarks
-antigen bundle soimort/translate-shell
-#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
-
-antigen apply
 
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -69,3 +55,17 @@ autoload -U compinit
 compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+antigen use oh-my-zsh
+
+#antigen bundle git
+antigen bundle command-not-found
+antigen bundle virtualenv
+antigen bundle soimort/translate-shell
+antigen bundle jocelynmallon/zshmarks
+antigen bundle soimort/translate-shell
+#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply
