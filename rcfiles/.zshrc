@@ -12,6 +12,9 @@ alias nvimp="nvim ~/.config/nvim/vim-plug_manager.vim"
 alias zshrc="nvim ~/.zshrc"
 alias t="tig status"
 alias j="jump"
+alias gs="git status --short"
+alias gp="git pull"
+alias gcm="git commit -m"
 
 antigen use oh-my-zsh
 
