@@ -54,7 +54,6 @@ SPACESHIP_VENV_SHOW=true
 autoload -U compinit
 compinit
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 antigen use oh-my-zsh
 
 #antigen bundle git
@@ -69,3 +68,4 @@ antigen bundle sindresorhus/pure
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
