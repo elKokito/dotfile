@@ -26,6 +26,7 @@ if [ -f "$HOME/.localsettings.sh" ]; then
     . $HOME/.localsettings.sh
 fi
 
+source `which autovenv.sh`
 # PROMPT
 SPACESHIP_PROMPT_SYMBOL='➔'
 SPACESHIP_PROMPT_ADD_NEWLINE=true
