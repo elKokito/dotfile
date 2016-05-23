@@ -67,6 +67,7 @@ antigen bundle soimort/translate-shell
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zlsun/solarized-man
 
 antigen apply
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
