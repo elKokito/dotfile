@@ -3,7 +3,7 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt-get update
 
-sudo apt-get install zsh ctags tmux xclip neovim w3m w3m-img gawk silversearcher-ag -y
+sudo apt-get install zsh ctags tmux xclip neovim w3m w3m-img gawk silversearcher-ag  git-extras -y
 
 
 mkdir -p $HOME/.i3/
