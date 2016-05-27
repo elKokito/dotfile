@@ -20,7 +20,8 @@ set showcmd
 "filetype plugin indent on
 "autocmd BufEnter * lcd %:p:h
 
-nnoremap <S-t> :tabnew<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 nnoremap + :vertical resize +10<CR>
 nnoremap - :vertical resize -10<CR>
 
