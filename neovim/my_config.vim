@@ -49,6 +49,8 @@ nnoremap <Backspace> ^
 
 nnoremap <leader>n :cn<CR>
 nnoremap <leader>p :cp<CR>
+nnoremap <leader>ln :lnext<CR>
+nnoremap <leader>lp :lprevious<CR>
 
 hi Normal ctermbg=none
 hi Normal cterm=none
@@ -58,3 +60,5 @@ hi NonText guibg=none
 hi LineBr ctermbg=none
 hi LineBr ctermfg=grey
 hi LineNr guibg=none
+
+nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
