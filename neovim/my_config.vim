@@ -49,8 +49,8 @@ nnoremap <Backspace> ^
 
 nnoremap <leader>n :cn<CR>
 nnoremap <leader>p :cp<CR>
-nnoremap <leader>ln :lnext<CR>
-nnoremap <leader>lp :lprevious<CR>
+nnoremap <leader>j :lnext<CR>
+nnoremap <leader>k :lprevious<CR>
 
 hi Normal ctermbg=none
 hi Normal cterm=none
