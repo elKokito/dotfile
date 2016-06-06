@@ -50,7 +50,7 @@ source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 
 colo monokai
-autocmd BufEnter *.py colo desertink
+autocmd BufEnter *.py colo molokai
 autocmd BufEnter *.ts set syntax=typescript
 
 set background=dark
