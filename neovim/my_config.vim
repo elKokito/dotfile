@@ -21,19 +21,29 @@ set showcmd
 "autocmd BufEnter * lcd %:p:h
 
 nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
-nnoremap + :vertical resize +10<CR>
-nnoremap - :vertical resize -10<CR>
+nnoremap ; :
+
+" windows
+nnoremap <silent> <leader>v <C-w>v<C-w>l
+nnoremap <silent> <leader>s <C-w>s<C-w>j
+nnoremap <silent> <leader>h <C-W>h
+nnoremap <silent> <leader>j <C-W>j
+nnoremap <silent> <leader>k <C-W>k
+nnoremap <silent> <leader>l <C-W>l
+nnoremap <silent> + :vertical resize +10<CR>
+nnoremap <silent> - :vertical resize -10<CR>
 
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
-nnoremap <C-j> :m .+1<CR>
-vnoremap <C-j> :m '>+1<CR>gv=gv
-nnoremap <C-k> :m .-2<CR>
-vnoremap <C-k> :m '<-2<CR>gv=gv
+nnoremap <silent> <C-j> :m .+1<CR>
+vnoremap <silent> <C-j> :m '>+1<CR>gv=gv
+nnoremap <silent> <C-k> :m .-2<CR>
+vnoremap <silent> <C-k> :m '<-2<CR>gv=gv
 
 nnoremap <leader>[ mmO<ESC>'m
 nnoremap <leader>] mmo<ESC>'m
@@ -41,7 +51,7 @@ nnoremap <leader>] mmo<ESC>'m
 nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 
-nnoremap <C-l> :nohlsearch<CR>
+nnoremap <silent> <C-l> :nohlsearch<CR>
 nnoremap <C-p> <C-i>
 
 nnoremap gr gT<CR>
@@ -49,8 +59,6 @@ nnoremap <Backspace> ^
 
 nnoremap <leader>n :cn<CR>
 nnoremap <leader>p :cp<CR>
-nnoremap <leader>j :lnext<CR>
-nnoremap <leader>k :lprevious<CR>
 
 hi Normal ctermbg=none
 hi Normal cterm=none

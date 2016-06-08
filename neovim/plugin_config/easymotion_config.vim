@@ -1,19 +1,19 @@
 nmap s <Plug>(easymotion-s2)
 nmap <leader>f <Plug>(easymotion-bd-f)
 nmap <leader>t <Plug>(easymotion-bd-t)
-nmap <leader>l <Plug>(easymotion-bd-jk)
+nmap <leader>; <Plug>(easymotion-bd-jk)
 
 map s <Plug>(easymotion-s2)
 map <leader>f <Plug>(easymotion-bd-f)
 map <leader>t <Plug>(easymotion-bd-t)
 map <leader>e <Plug>(easymotion-bd-e)
-map <leader>l <Plug>(easymotion-bd-jk)
+map <leader>; <Plug>(easymotion-bd-jk)
 
 
 vmap <leader>f <Plug>(easymotion-bd-f)
 vmap <leader>t <Plug>(easymotion-bd-t)
 vmap <leader>e <Plug>(easymotion-bd-e)
-vmap <leader>l <Plug>(easymotion-bd-jk)
+vmap <leader>; <Plug>(easymotion-bd-jk)
 
 map / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)

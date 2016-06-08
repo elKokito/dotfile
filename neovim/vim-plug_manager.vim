@@ -17,6 +17,8 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
+Plug 'carlitux/deoplete-ternjs'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -27,7 +29,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'https://github.com/benekastah/neomake.git'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'dhruvasagar/vim-table-mode'
 
@@ -48,6 +50,7 @@ source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
+source ~/.config/nvim/plugin_config/gitgutter.vim
 
 colo monokai
 autocmd BufEnter *.py colo molokai
@@ -69,4 +72,5 @@ hi LineNr guibg=none
 hi signcolumn guibg=none
 let g:gitgutter_override_sign_column_highlight = 0
 
+let g:tern_request_timeout = 1
 let g:deoplete#enable_at_startup = 1
