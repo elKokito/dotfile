@@ -70,3 +70,4 @@ hi LineBr ctermfg=grey
 hi LineNr guibg=none
 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+noswapfile

@@ -5,3 +5,4 @@ let g:NERDTreeQuitOnOpen = 1
 
 nnoremap <Tab> :NERDTreeToggle<CR>
 nnoremap <S-Tab> :NERDTreeFind<CR>
+let g:NERDSpaceDelims=2
