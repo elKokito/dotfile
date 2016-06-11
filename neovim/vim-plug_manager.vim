@@ -17,8 +17,8 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'https://github.com/ternjs/tern_for_vim.git'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
