@@ -21,9 +21,8 @@ set showcmd
 "autocmd BufEnter * lcd %:p:h
 
 nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
+nnoremap <silent> <leader>q :q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
-nnoremap ; :
 
 " windows
 nnoremap <silent> <leader>v <C-w>v<C-w>l
@@ -54,7 +53,7 @@ nnoremap <S-k> <C-y>
 nnoremap <silent> <C-l> :nohlsearch<CR>
 nnoremap <C-p> <C-i>
 
-nnoremap gr gT<CR>
+nnoremap gr gT
 nnoremap <Backspace> ^
 
 nnoremap <leader>n :cn<CR>
