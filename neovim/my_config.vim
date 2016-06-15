@@ -23,6 +23,7 @@ set showcmd
 nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
+nnoremap Z zt
 
 " windows
 nnoremap <silent> <leader>v <C-w>v<C-w>l
@@ -33,6 +34,9 @@ nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
 nnoremap <silent> + :vertical resize +10<CR>
 nnoremap <silent> - :vertical resize -10<CR>
+
+" open current window in new tab
+nnoremap <silent> <leader>m :tabedit %<CR>
 
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>

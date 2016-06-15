@@ -1,3 +1,4 @@
+let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-s2)
 nmap <leader>f <Plug>(easymotion-bd-f)
 nmap <leader>t <Plug>(easymotion-bd-t)
