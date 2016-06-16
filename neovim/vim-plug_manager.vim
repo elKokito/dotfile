@@ -19,6 +19,7 @@ Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'https://github.com/ternjs/tern_for_vim.git'
+Plug 'https://github.com/Quramy/tsuquyomi.git'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -51,6 +52,7 @@ source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
+source ~/.config/nvim/plugin_config/tsuquyomi.vim
 
 colo monokai
 autocmd BufEnter *.py colo molokai
