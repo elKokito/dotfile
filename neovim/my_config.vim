@@ -29,6 +29,10 @@ nnoremap Z zt
 nnoremap <silent> <leader>v <C-w>v<C-w>l
 nnoremap <silent> <leader>s <C-w>s<C-w>j
 nnoremap <silent> <leader>o <C-w>s<C-w>j
+nnoremap <silent> <leader>H <C-W>H
+nnoremap <silent> <leader>J <C-W>J
+nnoremap <silent> <leader>K <C-W>K
+nnoremap <silent> <leader>L <C-W>L
 nnoremap <silent> <leader>h <C-W>h
 nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
@@ -38,8 +42,8 @@ nnoremap <silent> - :vertical resize -10<CR>
 
 " tabs
 nnoremap <silent> <leader>m :tabedit %<CR>
-nnoremap <left> :tabmove -1<CR>
-nnoremap <right> :tabmove +1<CR>
+nnoremap mh :tabmove -1<CR>
+nnoremap ml :tabmove +1<CR>
 
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
