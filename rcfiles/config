@@ -164,6 +164,6 @@ mouse_warping none
 focus_follows_mouse no
 
 exec --no-startup-id xmodmap ~/.xmodmap
-exec --no-startup-id feh --bg-scale "/home/unito/Pictures/zen_monk-wallpaper-1920x1080.jpg"
+exec --no-startup-id feh --bg-scale ~/Dropbox/wallpaper/zen_monk-wallpaper-1920x1080.jpg
 exec --no-starup-id sh ~/.localsettings.sh
 exec --no-startup-id dropbox start &
