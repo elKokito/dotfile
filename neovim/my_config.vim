@@ -5,7 +5,7 @@ highlight Pmenu ctermfg=15
 
 let g:mapleader=" "
 
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 
 set number
 set ruler
@@ -17,8 +17,9 @@ set wildmode=full
 set termguicolors
 set showcmd
 
-"filetype plugin indent on
-"autocmd BufEnter * lcd %:p:h
+filetype on
+filetype plugin on
+filetype plugin indent on
 
 nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader>q :q<CR>
