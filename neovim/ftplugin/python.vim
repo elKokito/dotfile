@@ -1,4 +1,3 @@
-" colo molokai
 setlocal tabstop=4
 setlocal expandtab
 setlocal shiftwidth=4

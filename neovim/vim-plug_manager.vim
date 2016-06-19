@@ -57,11 +57,9 @@ source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
-source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
-source ~/.config/nvim/plugin_config/tsuquyomi.vim
 
 colo monokai
 autocmd BufEnter *.ts set syntax=typescript
@@ -82,5 +80,4 @@ hi LineNr guibg=none
 hi signcolumn guibg=none
 let g:gitgutter_override_sign_column_highlight = 0
 
-let g:tern_request_timeout = 1
 let g:deoplete#enable_at_startup = 1
