@@ -29,3 +29,12 @@ autocmd BufWrite *.ts Neomake tslint
 let g:neomake_open_list=0
 let g:neomake_jsx_enabled_makers = ['eslint']
 autocmd BufWrite *.jsx Neomake eslint
+
+" python settings
+let g:neomake_python_enabled_marker = {
+                  \'exe': ['flake8'],
+                  \'args': [],
+                  \'errorformat': '%f:%l%c: %m',
+                  \}
+
+autocmd BufWrite *.py Neomake flake8
