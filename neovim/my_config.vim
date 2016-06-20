@@ -5,7 +5,7 @@ highlight Pmenu ctermfg=15
 
 let g:mapleader=" "
 
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 
 set number
 set ruler
@@ -17,8 +17,9 @@ set wildmode=full
 set termguicolors
 set showcmd
 
-"filetype plugin indent on
-"autocmd BufEnter * lcd %:p:h
+filetype on
+filetype plugin on
+filetype plugin indent on
 
 nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader>q :q<CR>
@@ -26,24 +27,28 @@ nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 nnoremap Z zt
 
 " windows
+" split
 nnoremap <silent> <leader>v <C-w>v<C-w>l
 nnoremap <silent> <leader>s <C-w>s<C-w>j
 nnoremap <silent> <leader>o <C-w>s<C-w>j
-nnoremap <silent> <leader>H <C-W>H
-nnoremap <silent> <leader>J <C-W>J
-nnoremap <silent> <leader>K <C-W>K
-nnoremap <silent> <leader>L <C-W>L
+" move
+nnoremap <silent> mwh <C-W>H
+nnoremap <silent> mwj <C-W>J
+nnoremap <silent> mwk <C-W>K
+nnoremap <silent> mwl <C-W>L
+" focus
 nnoremap <silent> <leader>h <C-W>h
 nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
+" resize
 nnoremap <silent> + :vertical resize +10<CR>
 nnoremap <silent> - :vertical resize -10<CR>
 
 " tabs
 nnoremap <silent> <leader>m :tabedit %<CR>
-nnoremap mh :tabmove -1<CR>
-nnoremap ml :tabmove +1<CR>
+nnoremap <silent> mth :tabmove -1<CR>
+nnoremap <silent> mtl :tabmove +1<CR>
 
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>

@@ -4,36 +4,45 @@ endfunction
 
 call plug#begin("~/.config/nvim/plugged")
 
-Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/scrooloose/nerdcommenter.git'
-
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-" deoplete python completion
-Plug 'zchee/deoplete-jedi'
 " deoplete typescript completion
 Plug 'https://github.com/Shougo/vimproc.vim.git', { 'do': 'make' }
 
+" python
 Plug 'https://github.com/nvie/vim-flake8.git'
+Plug 'https://github.com/davidhalter/jedi-vim.git'
+Plug 'zchee/deoplete-jedi'
+
+" javascript && typescript
 Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
+Plug 'https://github.com/Quramy/tsuquyomi.git'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'https://github.com/ternjs/tern_for_vim.git'
-Plug 'https://github.com/Quramy/tsuquyomi.git'
 
+" markdown
+Plug 'dhruvasagar/vim-table-mode'
+
+" git
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 
+" maker
+Plug 'https://github.com/benekastah/neomake.git'
+
+" neovim enhancement
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/scrooloose/nerdcommenter.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
-Plug 'https://github.com/benekastah/neomake.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'dhruvasagar/vim-table-mode'
 
+" themes && colors
 Plug 'bling/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
@@ -48,14 +57,11 @@ source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 source ~/.config/nvim/plugin_config/easytags_config.vim
-source ~/.config/nvim/plugin_config/js.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
-source ~/.config/nvim/plugin_config/tsuquyomi.vim
 
 colo monokai
-autocmd BufEnter *.py colo molokai
 autocmd BufEnter *.ts set syntax=typescript
 
 set background=dark
@@ -74,5 +80,4 @@ hi LineNr guibg=none
 hi signcolumn guibg=none
 let g:gitgutter_override_sign_column_highlight = 0
 
-let g:tern_request_timeout = 1
 let g:deoplete#enable_at_startup = 1

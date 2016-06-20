@@ -5,6 +5,7 @@ export SHELL='zsh'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 
+setopt no_share_history
 source $HOME/.antigen.zsh
 
 alias nvimrc="nvim ~/.config/nvim/my_config.vim"

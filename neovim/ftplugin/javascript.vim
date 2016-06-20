@@ -1,3 +1,7 @@
+setlocal shiftwidth=2
+let g:tern_request_timeout = 1
+nnoremap <leader>d :TernDef<Cr>
+
 let g:javascript_enable_domhtmlcss = 1
 let g:jsx_ext_required = 0
 let g:javascript_conceal_function       = "ƒ"
@@ -10,4 +14,3 @@ let g:javascript_conceal_prototype      = "¶"
 let g:javascript_conceal_static         = "•"
 let g:javascript_conceal_super          = "Ω"
 let g:javascript_conceal_arrow_function = "⇒"
-autocmd BufEnter *.js set shiftwidth=2
