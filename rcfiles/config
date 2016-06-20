@@ -63,6 +63,10 @@ bindsym $mod+Ctrl+Shift+8 mark "iota", move scratchpad
 bindsym $mod+Ctrl+8 [con_mark="iota"] scratchpad show, resize set 1200 800
 bindsym $mod+Ctrl+Shift+9 mark "kappa", move scratchpad
 bindsym $mod+Ctrl+9 [con_mark="kappa"] scratchpad show, resize set 1200 800
+bindsym $mod+Ctrl+Shift+c mark "c_for_music", move scratchpad
+bindsym $mod+Ctrl+c [con_mark="c_for_music"] scratchpad show, resize set 1200 800
+bindsym $mod+Ctrl+Shift+s mark "slack", move scratchpad
+bindsym $mod+Ctrl+s [con_mark="slack"] scratchpad show, resize set 1200 800
 
 # change focus
 bindsym $mod+h focus left
