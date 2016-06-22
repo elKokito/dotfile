@@ -9,13 +9,17 @@ setopt no_share_history
 source $HOME/.antigen.zsh
 
 alias nvimrc="nvim ~/.config/nvim/my_config.vim"
-alias nvimp="nvim ~/.config/nvim/vim-plug_manager.vim"
+alias nvimp="nvim ~/.config/nvim/plugin_config/"
 alias zshrc="nvim ~/.zshrc"
 alias t="tig status"
 alias j="jump"
 alias gs="git status --short"
 alias gp="git pull"
-alias gcm="git commit -m"
+alias cm="git commit -m"
+alias wip='git commit -n -m "WIP"'
+alias co='git checkout'
+alias rb='git pull --rebase origin '
+alias a='git add '
 
 
 if [ -d "$HOME/bin" ] ; then
