@@ -11,6 +11,7 @@ source $HOME/.antigen.zsh
 alias nvimrc="nvim ~/.config/nvim/my_config.vim"
 alias nvimp="nvim ~/.config/nvim/plugin_config/"
 alias zshrc="nvim ~/.zshrc"
+alias i3rc="nvim ~/.i3/config"
 alias t="tig status"
 alias j="jump"
 alias gs="git status --short"
@@ -20,6 +21,7 @@ alias wip='git commit -n -m "WIP"'
 alias co='git checkout'
 alias rb='git pull --rebase origin '
 alias a='git add '
+alias up='git push'
 
 
 if [ -d "$HOME/bin" ] ; then

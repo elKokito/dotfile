@@ -109,3 +109,5 @@ hi LineBr ctermfg=grey
 hi LineNr guibg=none
 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
+map <leader>2 <leader>v<leader>d
