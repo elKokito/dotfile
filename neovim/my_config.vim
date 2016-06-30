@@ -109,3 +109,7 @@ hi LineBr ctermfg=grey
 hi LineNr guibg=none
 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+
+highlight DiffAdd guifg=green guibg=None
+highlight DiffDelete guifg=red guibg=None
+highlight DiffChange guifg=orange guibg=None
