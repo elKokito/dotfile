@@ -3,13 +3,6 @@ setlocal expandtab
 setlocal shiftwidth=4
 setlocal softtabstop=4
 
-function Definition()
-    :call jedi#goto_definitions()<CR>
-endfunction
+command! MyGotoDefinition :call jedi#goto_definitions()
+command! MyGotoGoto :call jedi#goto()<CR>
 
-function Goto()
-    :call jedi#goto()<CR>
-endfunction
-
-" nnoremap <leader>d :call jedi#goto_definitions()<CR>
-" nnoremap <leader>g :call jedi#goto()<CR>

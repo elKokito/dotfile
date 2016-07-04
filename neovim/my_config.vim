@@ -111,6 +111,7 @@ hi LineNr guibg=none
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 map <leader>2 <leader>v<leader>d
+map <leader>d :MyGotoDefinition<CR>
 
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None
