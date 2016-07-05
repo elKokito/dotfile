@@ -1,1 +1,1 @@
-command! MyGotoDefinition :TsuDefinition<CR>
+nnoremap <leader>d :TsuDefinition<CR>

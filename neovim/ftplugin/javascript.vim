@@ -1,9 +1,8 @@
 setlocal shiftwidth=2
 let g:tern_request_timeout = 1
 
-command! Definition :TernDef<CR>
-
-" nnoremap <leader>d :TernDef<Cr>
+nnoremap <silent> <leader>d :TernDef<CR>
+nnoremap <silent> <leader>u :TernRefs<CR>
 
 let g:javascript_enable_domhtmlcss = 1
 let g:jsx_ext_required = 0
