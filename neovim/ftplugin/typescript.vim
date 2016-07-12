@@ -1,1 +1,1 @@
-nnoremap <leader>d :TsuDefinition<CR>
+nnoremap <leader>dd :TsuDefinition<CR>
