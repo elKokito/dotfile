@@ -93,8 +93,8 @@ nnoremap <silent> gk :bn<CR>
 " -------------------------------------------------> "
 nnoremap <C-p> <C-i>
 " cnext/cprevious, lnext, lprevious
-nnoremap <leader>cn :cn<CR>
-nnoremap <leader>cp :cp<CR>
+map <leader>cn :cn<CR>
+map <leader>cp :cp<CR>
 nnoremap <leader>n :lnext<CR>
 nnoremap <leader>p :lprevious<CR>
 " <------------------------------------------------- "

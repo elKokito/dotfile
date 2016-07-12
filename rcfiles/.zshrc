@@ -7,6 +7,14 @@ export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 
 setopt no_share_history
 source $HOME/.antigen.zsh
+# source ~/.zplug/init.zsh
+
+# zplug "zsh-users/zsh-syntax-highlighting"
+# zplug "mafredri/zsh-async"
+# zplug "sindresorhus/pure", use:"*.zsh"
+# zplug "jocelynmallon/zshmarks"
+
+# zplug load
 
 alias nvimrc="nvim ~/.config/nvim/"
 alias zshrc="nvim ~/.zshrc"
@@ -34,51 +42,24 @@ if [ -f "$HOME/.localsettings.sh" ]; then
     . $HOME/.localsettings.sh
 fi
 
-source `which autovenv.sh`
-# PROMPT
-SPACESHIP_PROMPT_SYMBOL='➔'
-SPACESHIP_PROMPT_ADD_NEWLINE=true
-SPACESHIP_PROMPT_SEPARATE_LINE=true
-
-# GIT
-SPACESHIP_GIT_SHOW=true
-SPACESHIP_GIT_UNCOMMITTED='+'
-SPACESHIP_GIT_UNSTAGED='!'
-SPACESHIP_GIT_UNTRACKED='?'
-SPACESHIP_GIT_STASHED='$'
-SPACESHIP_GIT_UNPULLED='⇣'
-SPACESHIP_GIT_UNPUSHED='⇡'
-
-# NVM
-SPACESHIP_NVM_SHOW=true
-SPACESHIP_NVM_SYMBOL='⬢'
-
-# RUBY
-SPACESHIP_RUBY_SHOW=true
-SPACESHIP_RUBY_SYMBOL='💎'
-
-# VENV
-SPACESHIP_VENV_SHOW=true
+# source `which autovenv.sh`
 
 autoload -U compinit
 compinit
+
 
 antigen use oh-my-zsh
 
 #antigen bundle git
 antigen bundle command-not-found
 antigen bundle virtualenv
-antigen bundle soimort/translate-shell
 antigen bundle jocelynmallon/zshmarks
 antigen bundle soimort/translate-shell
-#antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zlsun/solarized-man
+antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export NVM_DIR="/home/koki/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
