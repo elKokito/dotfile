@@ -42,7 +42,7 @@ if [ -f "$HOME/.localsettings.sh" ]; then
     . $HOME/.localsettings.sh
 fi
 
-# source `which autovenv.sh`
+source `which autovenv.sh`
 
 autoload -U compinit
 compinit
