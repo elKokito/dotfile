@@ -28,8 +28,8 @@ bindsym XF86AudioMute exec amixer -c1 sset Master unmute
 bindcode 67 exec amixer sset Master unmute
 
 # common application
-bindsym $mod+Return exec gnome-terminal
-bindsym $mod+p exec konsole
+bindsym $mod+g exec gnome-terminal
+bindsym $mod+Return exec konsole
 bindsym $mod+b exec google-chrome
 bindsym $mod+i exec i3-input
 
