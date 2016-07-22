@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo
+while [ -n "$1" ]
+do
+  case "$1" in
+    -a) echo 'option a' ;;
+    -b) param="$2"
+        echo "option b with arg: $param"
+	shift ;;
+    -c) echo 'option c' ;;
+    --) shift
+        break;;
+     *) echo "$1 is not an option"
+  esac
+  shift
+done
