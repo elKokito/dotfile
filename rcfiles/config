@@ -179,7 +179,7 @@ bar {
         inactive_workspace #333333 #222222 #888888
         urgent_workspace   #2f343a #900000 #ffffff
     }
-     status_command i3status -c ~/.i3/i3status.conf
+     status_command i3blocks
 }
 client.focused #156fa9 #010101 #156fa9 #ffffff
 new_window none
