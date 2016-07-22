@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -n $1 ]
+then
+  if [ $1 == "c" ]
+  then
+    youtube-dl -x --audio-format mp3 --no-playlist --output "~/Dropbox/music/classic/s.%(title)s.%(ext)s" `xclip -selection clipboard -o`
+  fi
+else
+  youtube-dl -x --audio-format mp3 --no-playlist --output "~/Dropbox/music/s.%(title)s.%(ext)s" `xclip -selection clipboard -o`
+fi
