@@ -54,15 +54,15 @@ nnoremap <silent> <leader>m :tabedit %<CR>
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
 nnoremap gr gT
+inoremap <silent> <C-l> <C-PageDown>
+nnoremap <silent> <C-l> gt
+inoremap <silent> <C-h> <C-PageUp>
+nnoremap <silent> <C-h> gT
 " <------------------------------------------------- "
 
 " cursor
 " -------------------------------------------------> "
 " move
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
 nnoremap <Backspace> ^
 
 " move line
@@ -81,7 +81,7 @@ nnoremap <S-j> <C-e>
 nnoremap <S-k> <C-y>
 
 " clear
-nnoremap <silent> <C-l> :nohlsearch<CR>
+nnoremap <silent> <return> :nohlsearch<CR>
 
 " buffers
 " -------------------------------------------------> "
@@ -116,3 +116,40 @@ map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzz
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None
 highlight DiffChange guifg=orange guibg=None
+
+
+" testing "
+au BufLeave * call ModeSelectBufLeave()
+au BufEnter * call ModeSelectBufEnter()
+
+function! ModeSelectBufLeave()
+    let b:mode_select_mode = mode()
+    " A more complex addition you could make: if mode() == v, V, <C-V>, s, S, or <C-S>, store the selection and restore it in ModeSelectBufEnter
+endfunction
+
+function! ModeSelectBufEnter()
+    let l:mode = mode()
+    stopinsert  " First, go into normal mode
+    if (l:mode == "i" || l:mode == "R" || l:mode == "Rv") && 
+    \       (!exists('b:mode_select_mode') ||
+    \       b:mode_select_mode == "n" ||
+    \       b:mode_select_mode == "v" ||
+    \       b:mode_select_mode == "V" ||
+    \       b:mode_select_mode == "\<C-V>" ||
+    \       b:mode_select_mode == "s" ||
+    \       b:mode_select_mode == "S" ||
+    \       b:mode_select_mode == "\<C-S>")
+        normal l
+        " Compensate for the left cursor shift in stopinsert if going from an
+        " insert mode to a normal mode
+    endif
+    if !exists('b:mode_select_mode')
+        return
+    elseif b:mode_select_mode == "i"
+        startinsert
+    elseif b:mode_select_mode == "R"
+        startreplace
+    elseif b:mode_select_mode == "Rv"
+        startgreplace
+    endif
+endfunction
