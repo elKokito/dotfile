@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "enter something: "
+echo
+echo "you entered -> $REPLY"

@@ -1,17 +1,22 @@
 #!/bin/bash
 
 echo
-while [ -n "$1" ]
+while getopts :ab:cd opt
 do
-  case "$1" in
-    -a) echo 'option a' ;;
-    -b) param="$2"
-        echo "option b with arg: $param"
-	shift ;;
-    -c) echo 'option c' ;;
-    --) shift
-        break;;
-     *) echo "$1 is not an option"
+  case "$opt" in
+    a) echo "a option" ;;
+    b) echo "b option with $OPTARG" ;;
+    c) echo "c option" ;;
+    d) echo "d option" ;;
   esac
-  shift
+done
+#
+shift $[ $OPTIND - 1 ]
+#
+echo
+count=1
+for param in "$@"
+do
+  echo "parameter $count: $param"
+  count=$[ $count + 1 ]
 done
