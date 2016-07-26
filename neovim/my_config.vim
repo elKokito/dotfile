@@ -44,8 +44,8 @@ nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
 " resize
-nnoremap <silent> + :vertical resize +10<CR>
-nnoremap <silent> - :vertical resize -10<CR>
+nnoremap <silent> + :vertical resize +2<CR>
+nnoremap <silent> - :vertical resize -2<CR>
 " <------------------------------------------------- "
 
 " tabs
@@ -108,7 +108,7 @@ hi LineBr ctermbg=none
 hi LineBr ctermfg=grey
 hi LineNr guibg=none
 
-nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 map <leader>ds <C-W>v<C-W>l<leader>ddzz
 map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzz
