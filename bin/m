@@ -1,16 +1,28 @@
 #!/bin/bash
 
+function cmd {
+  if [ $# -gt 0 ]
+  then
+    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/$1/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+  else
+    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+  fi
+}
+
 if [ $# -gt 0 ]
 then
 
   if [ $1 == "c" ]
   then
-    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/classic/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+    cmd classic
+    # youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/classic/%(title)s.%(ext)s" `xclip -selection clipboard -o`
 
   elif [ $1 == "b" ]
   then
-    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/dropbaz/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+    cmd dropbaz
+    # youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/dropbaz/%(title)s.%(ext)s" `xclip -selection clipboard -o`
   fi
 else
-  youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+  cmd
+  # youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/%(title)s.%(ext)s" `xclip -selection clipboard -o`
 fi
