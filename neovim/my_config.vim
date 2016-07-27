@@ -50,7 +50,7 @@ nnoremap <silent> - :vertical resize -2<CR>
 
 " tabs
 " -------------------------------------------------> "
-nnoremap <silent> <leader>m :tabedit %<CR>
+nnoremap <silent> <leader>m <C-W>v<C-W>l<C-W>T
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
 nnoremap gr gT
