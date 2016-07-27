@@ -1,7 +1,28 @@
 " default settings of neovim
 source ~/.config/nvim/my_config.vim
 " plugin manager
+autocmd BufEnter *.ts set syntax=typescript
+autocmd BufEnter *.ts set filetype=typescript
+
+set background=dark
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
+
+let g:jellybeans_use_term_italics = 1
+" let g:gitgutter_override_sign_column_highlight = 0
+
+let g:deoplete#enable_at_startup = 1
 source ~/.config/nvim/vim-plug_manager.vim
+colo monokai
+hi Normal ctermbg=none
+hi Normal cterm=none
+hi NonText ctermbg=none
+hi Normal guibg=none
+hi NonText guibg=none
+hi LineBr ctermbg=none
+hi LineBr ctermfg=grey
+hi LineNr guibg=none
+hi signcolumn guibg=none
 
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None

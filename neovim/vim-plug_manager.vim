@@ -61,24 +61,3 @@ source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 " source ~/.config/nvim/plugin_config/gitgutter.vim
 
-colo monokai
-autocmd BufEnter *.ts set syntax=typescript
-autocmd BufEnter *.ts set filetype=typescript
-
-set background=dark
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
-
-let g:jellybeans_use_term_italics = 1
-hi Normal ctermbg=none
-hi Normal cterm=none
-hi NonText ctermbg=none
-hi Normal guibg=none
-hi NonText guibg=none
-hi LineBr ctermbg=none
-hi LineBr ctermfg=grey
-hi LineNr guibg=none
-hi signcolumn guibg=none
-" let g:gitgutter_override_sign_column_highlight = 0
-
-let g:deoplete#enable_at_startup = 1
