@@ -82,3 +82,25 @@ add readed line to file with line number, address and pattern apply to filename
 * __with line__ : `sed '3r read_file' filename`
 * __with pattern__ : `sed '/pattern/r read_file' filename`
 * __at the end__ : `sed '$r read_file' filename`
+
+## multiline process
+
+* `N` add next line in data stream to create multiline group
+* `D` delete a single line in a multiline group, delete the first line
+* `P` print a single line in a multiline group, print the first line
+
+### N
+
+`sed '/pattern/{ N; s/pattern2/replace/ }' filename` will search for `pattern`. the matching line will combine with the next line to apply de substitution.
+
+searching in multiple lines: `sed 'N ; s/pattern in multiple line/replace in multiple line/' filename`. normally used this way:
+
+```
+sed '
+s/pattern/replace/
+N
+s/pattern\npattern2/replace\nreplace2/
+' filename
+```
+
+this allow to treat single line match and multile line match.
