@@ -21,3 +21,6 @@ apply on visual selected line macro on register _a_
 ```vimscript
 :<,'>norm! @a
 ```
+
+
+### move inside
