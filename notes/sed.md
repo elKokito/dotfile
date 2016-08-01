@@ -113,3 +113,51 @@ this allow to treat single line match and multile line match.
 * `g` : copies hold space to pattern space
 * `G` : appends hold space to pattern space
 * `x` : exchanges contents of pattern and hold spaces
+
+## branching
+
+skip command on address. [address]b [label], example:
+
+`sed '{2,3b ; s/pattern/replace/; s/pattern2/replace2/}' filename`
+
+line 2 and 3 will skip the commands
+
+### branching with labels
+
+instead of skiping lines, send to `label` commands, example:
+
+```
+sed '{/pattern/b label ; s/pattern1/replace/
+:label
+s/pattern3/replace2/}' filename
+```
+
+lines matching `pattern` will use `s/pattern3/replace2/`, the other lines will use all the patterns.
+labels can be place before any command (can create infinte loop).
+
+### branching with test
+
+[address]t [label], basic `if-then`. use if no match then use other command.
+
+```
+sed '{
+s/pattern/replace/
+t
+s/pattern2/replace2/
+}' filename
+```
+
+## replacing with pattern
+
+`&` is used to represent the matching pattern in the substitution command.
+
+`sed 's/pattern/"&"/g'` will surround `pattern` with `"`
+
+### replace individual words in pattern
+
+`sed 's/\(sub-pattern\) rest-of-pattern/\1 replace/` will replace `sub-pattern` with `replace` in a line matching `sub-pattern rest-of-parttern`.
+`\1` refers to first matching group -> `\(...\)`. can be `\2`, `\3`, ...
+
+## tricks
+
+* insert line number before text: `sed '=' | sed'N; s/\n/ /'`

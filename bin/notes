@@ -1,0 +1,3 @@
+#!/bin/bash
+
+node ~/dotfile/bin/to_markdown.js $1 --color | less

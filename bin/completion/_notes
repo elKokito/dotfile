@@ -1,0 +1,8 @@
+#compdef notes
+
+_notes() {
+  note_files=`ls --format=commas ~/dotfile/notes`
+  _values : `echo $note_files | tr ',' ' '`
+}
+
+_notes

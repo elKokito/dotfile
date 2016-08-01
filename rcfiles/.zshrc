@@ -35,7 +35,8 @@ alias next='git rebase --continue'
 
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
-    fpath=(~/bin/completion $fpath)
+    PATH="$HOME/dotfile/bin:$PATH"
+    fpath=($HOME/dotfile/bin/completion $fpath)
 fi
 
 if [ -f "$HOME/.localsettings.sh" ]; then
