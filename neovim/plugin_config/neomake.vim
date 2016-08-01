@@ -37,6 +37,6 @@ let g:neomake_python_enabled_marker = {
                   \'errorformat': '%f:%l%c: %m',
                   \}
 
-if exists(":!flake8")
+if executable('flake8')
       autocmd BufWrite *.py Neomake flake8
 endif

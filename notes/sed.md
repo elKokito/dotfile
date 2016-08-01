@@ -104,3 +104,12 @@ s/pattern\npattern2/replace\nreplace2/
 ```
 
 this allow to treat single line match and multile line match.
+
+
+## hold space
+
+* `h` : copies pattern space to hold space
+* `H` : appends pattern space to hold space
+* `g` : copies hold space to pattern space
+* `G` : appends hold space to pattern space
+* `x` : exchanges contents of pattern and hold spaces
