@@ -146,7 +146,7 @@ function! ModeSelectBufEnter()
     if !exists('b:mode_select_mode')
         return
     elseif b:mode_select_mode == "i"
-        startinsert
+        startinsert!
     elseif b:mode_select_mode == "R"
         startreplace
     elseif b:mode_select_mode == "Rv"

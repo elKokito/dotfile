@@ -1,6 +1,6 @@
 #!/bin/sh
 sudo apt-get install xorg i3 gnome-terminal feh libxss1 libappindicator1 libindicator7 \
-    zathura mpv shutter -y
+    zathura mpv shutter numlockx -y
 
 curl -L https://github.com.com/elKokito/dotfile/tree/master/rcfiles/.xmodmap > $HOME/.xmodmap
 

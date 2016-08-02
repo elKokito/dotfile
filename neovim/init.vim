@@ -3,6 +3,8 @@ source ~/.config/nvim/my_config.vim
 " plugin manager
 autocmd BufEnter *.ts set syntax=typescript
 autocmd BufEnter *.ts set filetype=typescript
+autocmd BufEnter *.js set syntax=javascript
+autocmd BufEnter *.js set filetype=javascript
 
 set background=dark
 let g:monokai_term_italic = 1

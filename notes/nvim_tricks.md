@@ -22,5 +22,7 @@ apply on visual selected line macro on register _a_
 :<,'>norm! @a
 ```
 
+## replace with register with register "a"
+:%s/<regex>/\=@a/g
 
 ### move inside

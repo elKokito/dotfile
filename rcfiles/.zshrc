@@ -37,6 +37,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
     PATH="$HOME/dotfile/bin:$PATH"
     fpath=($HOME/dotfile/bin/completion $fpath)
+    fpath=($HOME/bin/completion $fpath)
 fi
 
 if [ -f "$HOME/.localsettings.sh" ]; then
