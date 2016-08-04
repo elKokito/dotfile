@@ -20,3 +20,8 @@
 - stay - the bloody beetrots club mix -> tommy vee, mauro ferrucci, the bloody beetroots
 - humain after all/together/one more time/music sound better with you -> daft punk
 - Testarossa (sebAstian Remix) -> kavinsky
+- Suite 9 -> Puzique
+- idealistic - A - Trak Remix -> Digitalism
+- Phantom Part 1.5 - Live Version -> Justice
+- Pogo - Digitalism's Pogo Robotic Remix -> Digitalism
+- Angst One -> The Toxic Avenger, SomethingALaMode
