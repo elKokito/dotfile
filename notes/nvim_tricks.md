@@ -26,3 +26,6 @@ apply on visual selected line macro on register _a_
 :%s/<regex>/\=@a/g
 
 ### move inside
+
+* `o` : go to other end
+* `O` : go to other end (in visual block)
