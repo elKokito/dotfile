@@ -1,3 +1,19 @@
 #!/bin/bash
 
-node ~/dotfile/bin/to_markdown.js $HOME/dotfile/notes/$1 --color | less
+is_edit=false
+
+echo
+while getopts e opt
+do
+  case "$opt" in
+    e) is_edit=true;;
+    *) echo "with no option";;
+  esac
+done
+shift $[ $OPTIND -1 ]
+
+if [ "$is_edit" = true ]; then
+  nvim $HOME/dotfile/notes/$1
+else
+  node ~/dotfile/bin/to_markdown.js $HOME/dotfile/notes/$1 --color | less
+fi
