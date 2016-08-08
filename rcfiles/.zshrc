@@ -44,24 +44,21 @@ if [ -f "$HOME/.localsettings.sh" ]; then
     . $HOME/.localsettings.sh
 fi
 
-source `which autovenv.sh`
+# source `which autovenv.sh`
 
-autoload -U compinit
-compinit
+# autoload -U compinit
+# compinit
 
 
 antigen use oh-my-zsh
 
-#antigen bundle git
-antigen bundle command-not-found
-antigen bundle virtualenv
 antigen bundle jocelynmallon/zshmarks
 antigen bundle soimort/translate-shell
 antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zlsun/solarized-man
-antigen bundle lukechilds/zsh-nvm
+# antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
