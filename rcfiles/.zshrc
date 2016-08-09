@@ -1,20 +1,16 @@
+autoload -U compinit
+compinit
+
 export TERM='xterm-256color'
 export EDITOR='nvim'
 export PATH="$PATH:$HOME/.local/bin"
 export SHELL='zsh'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
+export PURE_CMD_MAX_EXEC_TIME=99999999
 
 setopt no_share_history
-source $HOME/.antigen.zsh
-# source ~/.zplug/init.zsh
-
-# zplug "zsh-users/zsh-syntax-highlighting"
-# zplug "mafredri/zsh-async"
-# zplug "sindresorhus/pure", use:"*.zsh"
-# zplug "jocelynmallon/zshmarks"
-
-# zplug load
+source $HOME/.zgen/zgen.zsh
 
 alias nvimrc="nvim ~/.config/nvim/"
 alias zshrc="nvim ~/.zshrc"
@@ -31,6 +27,7 @@ alias a='git add '
 alias up='git push'
 alias merge='git mergetool'
 alias next='git rebase --continue'
+alias loadnvm='zgen load lukechilds/zsh-nvm'
 
 
 if [ -d "$HOME/bin" ] ; then
@@ -46,19 +43,16 @@ fi
 
 # source `which autovenv.sh`
 
-# autoload -U compinit
-# compinit
 
 
-antigen use oh-my-zsh
+zgen oh-my-zsh
 
-antigen bundle jocelynmallon/zshmarks
-antigen bundle soimort/translate-shell
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zlsun/solarized-man
-# antigen bundle lukechilds/zsh-nvm
+zgen load jocelynmallon/zshmarks
+zgen load soimort/translate-shell
+zgen load mafredri/zsh-async
+zgen load sindresorhus/pure
+zgen load zsh-users/zsh-syntax-highlighting
+zgen load zlsun/solarized-man
+zgen load zsh-users/zsh-completions src
 
-antigen apply
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
