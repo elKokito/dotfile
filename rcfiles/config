@@ -29,7 +29,7 @@ bindcode 67 exec amixer sset Master unmute
 
 # common application
 bindsym $mod+Return exec konsole
-bindsym $mod+Backspace exec google-chrome
+bindsym $mod+BackSpace exec google-chrome
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
