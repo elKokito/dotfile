@@ -29,3 +29,7 @@ apply on visual selected line macro on register _a_
 
 * `o` : go to other end
 * `O` : go to other end (in visual block)
+
+## local bindings
+
+`nnoremap <buffer> <leader>x dd`

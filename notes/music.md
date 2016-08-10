@@ -27,3 +27,10 @@
 * Angst One -> The Toxic Avenger, SomethingALaMode
 * Solar -> Pyramid
 * Jan Jelinek -> Lithiummelodie 1
+* 14h54 - chewy chocolate -> Danger
+* long way from home -> gedde le grand, sultan + shepard
+* contact -> daft punk
+* burn -> Q.G
+* sherbet -> brokencandys
+
+cuurent => my secret romance -> college
