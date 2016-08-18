@@ -1,1 +1,1 @@
-let g:peekaboo_window = 'vertical botright 30new'
+let g:peekaboo_window = 'vertical botright 100new'
