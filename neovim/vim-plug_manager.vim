@@ -25,7 +25,7 @@ Plug 'https://github.com/ternjs/tern_for_vim.git'
 Plug 'dhruvasagar/vim-table-mode'
 
 " git
-" Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 
 " maker
@@ -61,5 +61,5 @@ source ~/.config/nvim/plugin_config/easytags_config.vim
 source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/peekaboo.vim
-" source ~/.config/nvim/plugin_config/gitgutter.vim
+source ~/.config/nvim/plugin_config/gitgutter.vim
 
