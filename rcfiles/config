@@ -33,7 +33,6 @@ bindsym $mod+BackSpace exec google-chrome
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
-
 bindsym $mod+Tab scratchpad show
 
 # marks
@@ -72,6 +71,24 @@ bindsym $mod+s [con_mark="sss"] scratchpad show, resize set 1200 800
 
 bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
 bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+n mark "nnn", move scratchpad
+bindsym $mod+n [con_mark="nnn"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+u mark "uuu", move scratchpad
+bindsym $mod+u [con_mark="uuu"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+i mark "iii", move scratchpad
+bindsym $mod+i [con_mark="iii"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+o mark "ooo", move scratchpad
+bindsym $mod+o [con_mark="ooo"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+d mark "ddd", move scratchpad
+bindsym $mod+d [con_mark="ddd"] scratchpad show, resize set 1200 800
+
+bindsym $mod+Ctrl+Shift+w mark "www", move scratchpad
+bindsym $mod+w [con_mark="www"] scratchpad show, resize set 1200 800
 
 bindsym $mod+Ctrl+Shift+t mark "ttt", move scratchpad
 bindsym $mod+t [con_mark="ttt"] scratchpad show, resize set 1200 800
@@ -192,6 +209,17 @@ client.focused #156fa9 #010101 #156fa9 #ffffff
 new_window none
 mouse_warping none
 focus_follows_mouse no
+
+workspace 1 output eDP1
+workspace 2 output eDP1
+workspace 3 output eDP1
+workspace 4 output DP1
+workspace 5 output DP1
+workspace 6 output DP1
+workspace 7 output DP1
+workspace 8 output HDMI2
+workspace 9 output HDMI2
+workspace 10 output HDMI2
 
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-starup-id sh ~/.localsettings.sh

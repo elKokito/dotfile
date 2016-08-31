@@ -7,6 +7,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export SHELL='zsh'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
+export NVM_DIR="$HOME/.nvm"
 export PURE_CMD_MAX_EXEC_TIME=99999999
 
 setopt no_share_history
@@ -27,7 +28,8 @@ alias a='git add '
 alias up='git push'
 alias merge='git mergetool'
 alias next='git rebase --continue'
-alias loadnvm='zgen load lukechilds/zsh-nvm'
+alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
+# alias loadnvm='zgen load lukechilds/zsh-nvm'
 
 
 if [ -d "$HOME/bin" ] ; then

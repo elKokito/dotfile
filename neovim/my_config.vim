@@ -43,6 +43,8 @@ nnoremap <silent> <leader>h <C-W>h
 nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
+tnoremap <silent> <C-h> <C-\><C-n><C-W>h
+tnoremap <silent> <C-l> <C-\><C-n><C-W>l
 " resize
 nnoremap <silent> + :vertical resize +2<CR>
 nnoremap <silent> - :vertical resize -2<CR>
