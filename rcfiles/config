@@ -210,17 +210,6 @@ new_window none
 mouse_warping none
 focus_follows_mouse no
 
-workspace 1 output eDP1
-workspace 2 output eDP1
-workspace 3 output eDP1
-workspace 4 output DP1
-workspace 5 output DP1
-workspace 6 output DP1
-workspace 7 output DP1
-workspace 8 output HDMI2
-workspace 9 output HDMI2
-workspace 10 output HDMI2
-
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-starup-id sh ~/.localsettings.sh
 exec --no-startup-id feh --bg-scale ~/Dropbox/wallpaper/zen_monk-wallpaper-1920x1080.jpg
