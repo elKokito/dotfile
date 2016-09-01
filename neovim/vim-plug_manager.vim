@@ -18,8 +18,11 @@ Plug 'https://github.com/leafgarland/typescript-vim.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/Quramy/tsuquyomi.git'
-Plug 'carlitux/deoplete-ternjs'
-Plug 'https://github.com/ternjs/tern_for_vim.git'
+" Plug 'carlitux/deoplete-ternjs'
+" Plug 'https://github.com/ternjs/tern_for_vim.git'
+
+" C/C++
+Plug 'zchee/deoplete-clang'
 
 " markdown
 Plug 'dhruvasagar/vim-table-mode'
@@ -62,4 +65,4 @@ source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/peekaboo.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
-
+source ~/.config/nvim/plugin_config/cpp.vim
