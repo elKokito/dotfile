@@ -7,7 +7,6 @@ while getopts e opt
 do
   case "$opt" in
     e) is_edit=true;;
-    *) echo "with no option";;
   esac
 done
 shift $[ $OPTIND -1 ]
