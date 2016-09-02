@@ -10,3 +10,6 @@ sudo add-apt-repository ppa:fontforge/fontforge -y
 sudo apt-get update
 sudo apt-get install fontforge -y
 git clone https://github.com/ryanoasis/nerd-fonts.git ~/build/
+git clone https://github.com/soimort/translate-shell ~/build/
+cd build
+make TARGET=zsh PREFIX=~/.local install
