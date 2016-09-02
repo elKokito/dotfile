@@ -34,18 +34,17 @@ alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
+    fpath=($HOME/bin/completion $fpath)
+fi
+
+if [ -d "$HOME/dotfile" ]; then
     PATH="$HOME/dotfile/bin:$PATH"
     fpath=($HOME/dotfile/bin/completion $fpath)
-    fpath=($HOME/bin/completion $fpath)
 fi
 
 if [ -f "$HOME/.localsettings.sh" ]; then
     . $HOME/.localsettings.sh
 fi
-
-# source `which autovenv.sh`
-
-
 
 zgen oh-my-zsh
 
