@@ -33,3 +33,12 @@ apply on visual selected line macro on register _a_
 ## local bindings
 
 `nnoremap <buffer> <leader>x dd`
+
+## g command
+
+* matching pattern: `[range]g/pattern/cmd`
+* matching reverse pattern: `[range]g!/pattern/cmd`
+
+### examples
+
+* delete blank lines: `g/^\s*$/d`

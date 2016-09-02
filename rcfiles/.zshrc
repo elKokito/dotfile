@@ -29,7 +29,6 @@ alias up='git push'
 alias merge='git mergetool'
 alias next='git rebase --continue'
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
-# alias loadnvm='zgen load lukechilds/zsh-nvm'
 
 
 if [ -d "$HOME/bin" ] ; then
