@@ -24,9 +24,6 @@ Plug 'https://github.com/Quramy/tsuquyomi.git'
 " C/C++
 Plug 'zchee/deoplete-clang'
 
-"C/C++
-Plug 'zchee/deoplete-clang'
-
 " markdown
 Plug 'dhruvasagar/vim-table-mode'
 
