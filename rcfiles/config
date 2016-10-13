@@ -8,7 +8,7 @@ floating_modifier $mod
 
 # start kill
 bindsym $mod+Delete kill
-bindsym $mod+r exec dmenu_run
+bindsym $mod+p exec dmenu_run
 
 # touchpad enable disabled
 bindsym $mod+plus exec xinput set-prop 11 "Device Enabled" 1
@@ -27,8 +27,8 @@ bindcode 69 exec amixer sset Master 5%+
 # bindsym XF86AudioLowerVolume exec amixer -c1 sset Master 5%-
 bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 bindcode 68 exec amixer sset Master 5%-
-bindsym XF86AudioMute exec amixer -c1 sset Master unmute
-bindcode 67 exec amixer sset Master unmute
+bindsym XF86AudioMute exec amixer set Master toggle && amixer set Headphone toggle
+bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 
 # common application
 bindsym $mod+Return exec konsole
