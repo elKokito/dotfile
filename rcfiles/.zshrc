@@ -15,7 +15,7 @@ source $HOME/.zgen/zgen.zsh
 
 alias nvimrc="nvim ~/.config/nvim/"
 alias zshrc="nvim ~/.zshrc"
-alias i3rc="nvim ~/.i3/config"
+alias i3rc="nvim ~/.config/i3/config"
 alias t="tig status"
 alias j="jump"
 alias gs="git status --short"
@@ -31,6 +31,7 @@ alias next='git rebase --continue'
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 alias fren='trans fr:en'
 alias enfr='trans en:fr'
+alias fzfg='ag --nobreak --nonumbers --noheading . | fzf'
 
 
 if [ -d "$HOME/bin" ] ; then
@@ -56,5 +57,11 @@ zgen load sindresorhus/pure
 zgen load zsh-users/zsh-syntax-highlighting
 zgen load zlsun/solarized-man
 zgen load zsh-users/zsh-completions src
+
+fzfGrep() {
+    ag --nobreak --nonumbers --noheading  . | fzf | cut -d ':' -f 1
+}
+
+alias s='fzfGrep'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
