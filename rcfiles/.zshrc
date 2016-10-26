@@ -31,6 +31,7 @@ alias next='git rebase --continue'
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 alias fren='trans fr:en'
 alias enfr='trans en:fr'
+alias c='clipcopy'
 
 
 if [ -d "$HOME/bin" ] ; then
