@@ -1,6 +1,6 @@
 let g:gitgutter_map_keys = 0
-nnoremap ]c :GitGutterNextHunk<CR>
-nnoremap [c :GitGutterPrevHunk<CR>
+nnoremap <silent> ]c :GitGutterNextHunk<CR>
+nnoremap <silent> [c :GitGutterPrevHunk<CR>
 "unmap <Space>hu
 "unmap <Space>hs
 "unmap <Space>hr
