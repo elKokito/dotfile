@@ -32,6 +32,7 @@ alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 alias fren='trans fr:en'
 alias enfr='trans en:fr'
 alias fzfg='ag --nobreak --nonumbers --noheading . | fzf'
+alias b='bpython'
 
 
 if [ -d "$HOME/bin" ] ; then
