@@ -23,7 +23,6 @@ filetype plugin on
 filetype plugin indent on
 
 nnoremap <leader>w :w<CR>
-nnoremap <silent> <leader>q :q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 nnoremap Z zt
 
@@ -98,8 +97,8 @@ nnoremap <silent> gk :bn<CR>
 " -------------------------------------------------> "
 nnoremap <C-p> <C-i>
 " cnext/cprevious, lnext, lprevious
-map <leader>cn :cn<CR>
-map <leader>cp :cp<CR>
+map <leader>qn :cn<CR>
+map <leader>qp :cp<CR>
 nnoremap <leader>n :lnext<CR>
 nnoremap <leader>p :lprevious<CR>
 " <------------------------------------------------- "
