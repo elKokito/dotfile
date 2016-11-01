@@ -32,6 +32,7 @@ bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 # common application
 bindsym $mod+Return exec konsole
 bindsym $mod+BackSpace exec google-chrome
+bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
@@ -184,7 +185,7 @@ bindsym $mod+Shift+n mode "resize"
 # finds out, if available)
 bar {
    position bottom
-   status_command i3status --config ~/.config/i3status/config
+   status_command i3status --config ~/dotfile/rcfiles/i3status.conf
    # mode hide
    # hidden_state hide
    # modifier $winmod

@@ -31,12 +31,12 @@ let g:neomake_jsx_enabled_makers = ['eslint']
 autocmd BufWrite *.jsx Neomake eslint
 
 " python settings
-let g:neomake_python_enabled_marker = {
-                  \'exe': ['flake8'],
-                  \'args': [],
-                  \'errorformat': '%f:%l%c: %m',
-                  \}
+" let g:neomake_python_enabled_marker = {
+                  " \'exe': ['pylint, flake8'],
+                  " \'args': [],
+                  " \'errorformat': '%f:%l%c: %m',
+                  " \}
 
-if executable('flake8')
-      autocmd BufWrite *.py Neomake flake8
-endif
+" if executable('pylint')
+      " autocmd BufWrite *.py Neomake pylint
+" endif

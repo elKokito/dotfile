@@ -66,4 +66,9 @@ fzfGrep() {
 
 alias s='fzfGrep'
 
+nvimFZFgrep() {
+    ag . | fzf | sed "s/:/ /g" | gawk '{print $1 " +"$2}' | xargs nvim
+}
+alias ng='nvimFZFgrep'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
