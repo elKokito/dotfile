@@ -33,7 +33,7 @@ bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindsym $mod+Return exec konsole
 bindsym $mod+BackSpace exec google-chrome
 bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
-bindsym $mod+w exec rofi -show window
+bindsym $mod+semicolon exec rofi -show window
 bindsym $mod+p exec rofi -show run
 
 # scratchpad
