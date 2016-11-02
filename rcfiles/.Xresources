@@ -9,7 +9,7 @@ rofi.lines:                          15
 ! Number of columns
 rofi.columns:                        1
 ! Font to use
-rofi.font:                           mono 12
+rofi.font:                           FiraCode 12
 ! Foreground color
 rofi.fg:                             #002B36
 ! Background color
@@ -101,7 +101,7 @@ rofi.parse-known-hosts:              true
 ! Set the modi to combine in combi mode
 rofi.combi-modi:                     window,run
 ! Do a more fuzzy matching
-rofi.fuzzy:                          false
+rofi.fuzzy:                          true
 ! Use glob matching
 rofi.glob:                           false
 ! Tokenize input string
@@ -115,13 +115,13 @@ rofi.filter:
 ! Separator style (none, dash, solid)
 ! rofi.separator-style:                dash
 ! Hide scroll-bar
-rofi.hide-scrollbar:                 false
+rofi.hide-scrollbar:                 true
 ! Show markup
 rofi.markup-rows:                    false
 ! Fullscreen
 rofi.fullscreen:                     false
 ! Fake transparency
-rofi.fake-transparency:              false
+rofi.fake-transparency:              true
 ! DPI
 rofi.dpi:                            -1
 ! Pidfile location
