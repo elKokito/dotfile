@@ -36,7 +36,7 @@ bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
 bindsym $mod+semicolon exec rofi -show window
 bindsym $mod+p exec rofi -show run
 bindsym $mod+apostrophe exec /home/marcial/dotfile/bin/rofi/get_workspaces
-bindsym $mod+c exec /home/marcial/dotfile/bin/rofi/create_workspace
+bindsym $mod+c exec /home/marcial/dotfile/bin/rofi/move_to_new_workspace
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
