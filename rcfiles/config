@@ -35,7 +35,7 @@ bindsym $mod+BackSpace exec google-chrome
 bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
 bindsym $mod+semicolon exec rofi -show window
 bindsym $mod+p exec rofi -show run
-bindsym $mod+apostrophe exec /home/marcial/dotfile/bin/rofi/get_workspaces
+bindsym $mod+apostrophe exec /home/marcial/dotfile/bin/rofi/goto_workspace
 bindsym $mod+c exec /home/marcial/dotfile/bin/rofi/move_to_new_workspace
 
 # scratchpad
@@ -134,6 +134,8 @@ bindsym $mod+0 workspace 10
 
 bindsym $mod+Ctrl+j workspace prev
 bindsym $mod+Ctrl+k workspace next
+bindsym $mod+Left move workspace to output left
+bindsym $mod+Right move workspace to output right
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -185,8 +187,8 @@ bindsym $mod+Shift+n mode "resize"
 bar {
    position bottom
    status_command i3status --config ~/dotfile/rcfiles/i3status.conf
-   # mode hide
-   # hidden_state hide
+   mode hide
+   hidden_state hide
    # modifier $winmod
    # wheel_up_cmd nop
    # wheel_down_cmd nop

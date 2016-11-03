@@ -34,6 +34,7 @@ alias enfr='trans en:fr'
 alias c='clipcopy'
 alias fzfg='ag --nobreak --nonumbers --noheading . | fzf'
 alias b='bpython'
+alias n='nvim .'
 
 
 if [ -d "$HOME/bin" ] ; then
