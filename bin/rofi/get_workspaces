@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+get_workspaces() {
+  i3-msg -t get_workspaces | tr ',' '\n' | grep "name" | sed 's/"name":"\(.*\)"/\1/g' | sort -n
+}
+
+selected_workspace=$(get_workspaces | rofi -dmenu -p)
+
+
+if [ $selected_workspace ]; then
+  i3-msg workspace $selected_workspace > /dev/null
+fi

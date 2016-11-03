@@ -1,0 +1,40 @@
+#!/bin/bash
+
+get_container_windows() {
+  length=`echo $1 | jq ".nodes | length"`
+  if [ "$length" == "0" ];then
+    # echo $1
+    echo `echo $1 | jq ".id|tostring"`
+  else
+    for l in `seq 0 $(( $length -1 ))`;do
+      subcontainer=`echo $1 | jq ".nodes[$l]"`
+      echo `get_container_windows "$subcontainer"`
+    done
+  fi
+}
+
+get_windows_from_workspace() {
+  container=$(i3-msg -t get_tree | jq ".nodes[].nodes[] | select(.name==\"content\").nodes[]| select(.name=="$1")")
+
+  nodes=`echo $container | jq '.nodes | length'`
+  for item in `seq 0 $(( $nodes -1 ))`; do
+    subcontainer=`echo $container | jq ".nodes[$item]"`
+    # length=`echo $container | jq ".nodes[$item].nodes | length"`
+    echo `get_container_windows "$subcontainer"`
+  done
+}
+
+move_to_workspace() {
+  focused_workspace=$(i3-msg -t get_workspaces | jq '.[] | select(.focused==true).name')
+
+  new_workspace_name=$(echo "" | rofi -dmenu -p "name new workspace: ")
+  if [ $new_workspace_name ]; then
+    windows=`get_windows_from_workspace $focused_workspace`
+    for w in $windows;do
+      `i3-msg '[con_id='${w}'] move to workspace '${new_workspace_name}`
+    done
+    `i3-msg workspace ${new_workspace_name}` > /dev/null
+  fi
+}
+
+move_to_workspace

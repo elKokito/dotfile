@@ -1,0 +1,10 @@
+#!/bin/bash
+
+create_workspace() {
+  new_workspace_name=$(echo "" | rofi -dmenu -p "name new workspace: ")
+  if [ $new_workspace_name ]; then
+    i3-msg workspace $new_workspace_name
+  fi
+}
+
+create_workspace
