@@ -35,6 +35,8 @@ bindsym $mod+BackSpace exec google-chrome
 bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
 bindsym $mod+semicolon exec rofi -show window
 bindsym $mod+p exec rofi -show run
+bindsym $mod+apostrophe exec /home/marcial/dotfile/bin/rofi/get_workspaces
+bindsym $mod+c exec /home/marcial/dotfile/bin/rofi/create_workspace
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
@@ -67,9 +69,6 @@ bindsym $mod+a [con_mark="aaa"] scratchpad show, resize set 1200 800
 
 bindsym $mod+Ctrl+Shift+b mark "bbb", move scratchpad
 bindsym $mod+b [con_mark="bbb"] scratchpad show, resize set 1200 800
-
-bindsym $mod+Ctrl+Shift+c mark "ccc", move scratchpad
-bindsym $mod+c [con_mark="ccc"] scratchpad show, resize set 1200 800
 
 bindsym $mod+Ctrl+Shift+s mark "sss", move scratchpad
 bindsym $mod+s [con_mark="sss"] scratchpad show, resize set 1200 800
