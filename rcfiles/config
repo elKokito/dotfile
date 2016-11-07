@@ -33,10 +33,9 @@ bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindsym $mod+Return exec konsole
 bindsym $mod+BackSpace exec google-chrome
 bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
-bindsym $mod+semicolon exec rofi -show window
 bindsym $mod+p exec rofi -show run
-bindsym $mod+apostrophe exec /home/marcial/dotfile/bin/rofi/goto_workspace
-bindsym $mod+c exec /home/marcial/dotfile/bin/rofi/move_to_new_workspace
+bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
+bindsym $mod+c exec ~/dotfile/bin/rofi/move_to_new_workspace
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
@@ -187,8 +186,8 @@ bindsym $mod+Shift+n mode "resize"
 bar {
    position bottom
    status_command i3status --config ~/dotfile/rcfiles/i3status.conf
-   mode hide
-   hidden_state hide
+   # mode hide
+   # hidden_state hide
    # modifier $winmod
    # wheel_up_cmd nop
    # wheel_down_cmd nop
