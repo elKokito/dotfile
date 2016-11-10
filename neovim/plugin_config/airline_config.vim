@@ -8,6 +8,9 @@ let g:airline_exclude_preview = 1
 let g:airline_detect_modified=1
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
+let g:airline#extensions#hunks#enabled = 0
+let g:airline#extensions#tabgar#enable = 1
+let g:airline#extensions#tagbar#flags = 'f'
 "      
 " let g:airline_section_a = airline#section#create(['mode', '', 'branch'])
 let g:airline_section_y = airline#section#create_right(['%t'])
