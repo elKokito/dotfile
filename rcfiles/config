@@ -198,7 +198,7 @@ bar {
       statusline #eae9da
       separator  #eae9ada
 
-      focused_workspace  #30363b #30363b #4e9ab7
+      focused_workspace  #555e6d #30363b #4e9ab7
       active_workspace   #30363b #30363b #4e9ab7
       inactive_workspace #30363b #30363b #eae9da
       urgent_workspace   #9b6465 #30363b #eae9da
