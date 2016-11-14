@@ -1,7 +1,7 @@
 # config
 set $mod Mod4
 #font pango:Source Code Pro for Powerline 14
-font pango:Anonymice 9
+font pango:Anonymice 10
 
 floating_modifier $mod
 
@@ -204,13 +204,11 @@ bar {
       urgent_workspace   #9b6465 #30363b #eae9da
    }
 }
-client.focused          #000000 #eae9da #000000 #eae9da
-client.focused_inactive #000000 #5f676a #ffffff #5f676a
-client.unfocused        #000000 #30363b #888888 #30363b
-client.urgent           #000000 #9b6465 #ffffff #9b6465
-client.placeholder      #000000 #ffffff #ffffff #000000
-# client.focused #156fa9 #010101 #156fa9 #ffffff
-new_window none
+# class                 border  backg   text    indica.
+client.focused          #30363b #696969 #c0c0c0 #ffffff
+client.unfocused        #050505 #000000 #707070 #30363b
+client.focused_inactive #050505 #000000 #c0c0c0 #5f676a
+new_window pixel 1
 mouse_warping none
 focus_follows_mouse no
 
