@@ -1,0 +1,19 @@
+#!/bin/bash
+
+list_scratchpad() {
+  i3-msg -t get_tree | jq '.nodes[].nodes[].nodes[] | select(.name=="__i3_scratch") | .floating_nodes[].nodes[].marks[]'
+}
+
+get_scratchpad_info() {
+  selected_scracthpad=$(list_scratchpad)
+  if [ $selected_scracthpad ]; then
+    i3-msg -t get_tree | jq '.nodes[].nodes[].nodes[] | select(.name=="__i3_scratch") | .floating_nodes[].nodes[] | select(.marks[0]=="'$selected_scracthpad'"'
+  fi
+}
+
+show_scratchpad() {
+  mark=$(list_scratchpad | rofi -dmenu -p)
+  i3-msg "[con_mark=$mark] scratchpad show"
+}
+
+show_scratchpad
