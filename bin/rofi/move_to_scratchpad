@@ -1,0 +1,7 @@
+#!/bin/bash
+
+new_scratchpad_name=$(echo "" | rofi -dmenu -p "name scratchpad: ")
+if [ $new_scratchpad_name ]; then
+  i3-msg mark $new_scratchpad_name
+  i3-msg move scratchpad
+fi

@@ -37,6 +37,6 @@ autocmd BufWrite *.jsx Neomake eslint
                   " \'errorformat': '%f:%l%c: %m',
                   " \}
 
-" if executable('pylint')
-      " autocmd BufWrite *.py Neomake pylint
-" endif
+if executable('pylint')
+      autocmd BufWrite *.py Neomake pylint
+endif
