@@ -47,6 +47,7 @@ Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'mtth/scratch.vim'
 
 " themes && colors
 Plug 'bling/vim-airline'
@@ -68,3 +69,4 @@ source ~/.config/nvim/plugin_config/gitgutter.vim
 source ~/.config/nvim/plugin_config/cpp.vim
 source ~/.config/nvim/plugin_config/deoplete.vim
 source ~/.config/nvim/plugin_config/tagbar.vim
+source ~/.config/nvim/plugin_config/scratch.vim
