@@ -2,6 +2,6 @@
 
 new_scratchpad_name=$(echo "" | rofi -dmenu -p "name scratchpad: ")
 if [ $new_scratchpad_name ]; then
-  i3-msg mark $new_scratchpad_name
-  i3-msg move scratchpad
+  i3-msg mark $new_scratchpad_name 2> /dev/null
+  i3-msg move scratchpad 2> /dev/null
 fi

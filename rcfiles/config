@@ -36,6 +36,8 @@ bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
 bindsym $mod+p exec rofi -show run
 bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/move_to_new_workspace
+bindsym $mod+s exec ~/dotfile/bin/rofi/move_to_scratchpad
+bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
@@ -69,9 +71,6 @@ bindsym $mod+a [con_mark="aaa"] scratchpad show, resize set 1200 800
 bindsym $mod+Ctrl+Shift+b mark "bbb", move scratchpad
 bindsym $mod+b [con_mark="bbb"] scratchpad show, resize set 1200 800
 
-bindsym $mod+Ctrl+Shift+s mark "sss", move scratchpad
-bindsym $mod+s [con_mark="sss"] scratchpad show, resize set 1200 800
-
 bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
 bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1200 800
 
@@ -89,7 +88,6 @@ bindsym $mod+o [con_mark="ooo"] scratchpad show, resize set 1200 800
 
 bindsym $mod+Ctrl+Shift+d mark "ddd", move scratchpad
 bindsym $mod+d [con_mark="ddd"] scratchpad show, resize set 1200 800
-
 
 bindsym $mod+Ctrl+Shift+t mark "ttt", move scratchpad
 bindsym $mod+t [con_mark="ttt"] scratchpad show, resize set 1200 800
@@ -191,7 +189,7 @@ bar {
    # modifier $winmod
    # wheel_up_cmd nop
    # wheel_down_cmd nop
-   # font Droid Sans Mono for Powerline:style=Regular:size=9:antialias=true
+   font pango:Fira Code 12
 
    colors {
       background #30363b
