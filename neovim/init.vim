@@ -34,3 +34,7 @@ highlight DiffChange guifg=orange guibg=None
 nnoremap <leader>L :diffget LO<CR>
 nnoremap <leader>B :diffget BA<CR>
 nnoremap <leader>R :diffget RE<CR>
+
+hi TabLineFill gui=None
+hi TabLineSel gui=none guifg=red
+hi Tabline guifg=#3c3c3c guibg=white

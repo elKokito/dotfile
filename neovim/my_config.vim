@@ -87,11 +87,6 @@ nnoremap <S-k> <C-y>
 " clear
 nnoremap <silent> <return> :nohlsearch<CR>
 
-" buffers
-" -------------------------------------------------> "
-nnoremap <silent> gj :bp<CR>
-nnoremap <silent> gk :bn<CR>
-" <------------------------------------------------- "
 
 " jump
 " -------------------------------------------------> "
@@ -111,6 +106,7 @@ hi NonText guibg=none
 hi LineBr ctermbg=none
 hi LineBr ctermfg=grey
 hi LineNr guibg=none
+
 
 nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
