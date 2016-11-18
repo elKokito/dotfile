@@ -182,21 +182,16 @@ bindsym $mod+Shift+n mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-   position bottom
+   position top
    status_command i3status --config ~/dotfile/rcfiles/i3status.conf
-   # mode hide
-   # hidden_state hide
-   # modifier $winmod
-   # wheel_up_cmd nop
-   # wheel_down_cmd nop
    font pango:Fira Code 12
 
    colors {
       background #30363b
       statusline #eae9da
-      separator  #eae9ada
+      separator  #eae9ad
 
-      focused_workspace  #555e6d #30363b #4e9ab7
+      focused_workspace  #555e6d #555e6d #4e9ab7
       active_workspace   #30363b #30363b #4e9ab7
       inactive_workspace #30363b #30363b #eae9da
       urgent_workspace   #9b6465 #30363b #eae9da
