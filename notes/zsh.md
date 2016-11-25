@@ -9,7 +9,7 @@
 
 ### all occurence
 
-`!!:gs/got all/replace all/
+`!!:gs/got all/replace all/`
 
 ## repeat nth-last command
 

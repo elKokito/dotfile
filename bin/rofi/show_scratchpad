@@ -12,7 +12,7 @@ get_scratchpad_info() {
 }
 
 show_scratchpad() {
-  mark=$(list_scratchpad | rofi -dmenu -p)
+  mark=$(list_scratchpad | rofi -dmenu -p 'scratchpad => ')
   i3-msg "[con_mark=$mark] scratchpad show"
 }
 

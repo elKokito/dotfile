@@ -4,9 +4,10 @@ sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt-get update
 
 sudo apt-get install zsh ctags tmux xclip neovim w3m w3m-img gawk silversearcher-ag git-extras \
-    python-software-properties clang python3-pip tig jq rofi -y
+    python-software-properties clang python3-pip tig jq rofi \
+    kdiff3 -y
 
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install nodejs -y
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf

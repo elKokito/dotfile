@@ -38,6 +38,7 @@ bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/move_to_new_workspace
 bindsym $mod+s exec ~/dotfile/bin/rofi/move_to_scratchpad
 bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
+bindsym $mod+backslash exec "konsole -e ~/.local/bin/bpython"
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad
