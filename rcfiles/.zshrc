@@ -72,4 +72,9 @@ nvimFZFgrep() {
 }
 alias ng='nvimFZFgrep'
 
+fd() {
+    local file
+    local dir
+    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
