@@ -16,6 +16,7 @@ set list listchars=tab:\ \ ,trail:·
 set wildmode=full
 set termguicolors
 set showcmd
+set noshowmode
 noswapfile
 
 filetype on
