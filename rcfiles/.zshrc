@@ -36,6 +36,10 @@ alias fzfg='ag --nobreak --nonumbers --noheading . | fzf'
 alias b='bpython'
 alias n='nvim .'
 
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^[e" edit-command-line
+
 
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"

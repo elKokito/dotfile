@@ -15,3 +15,7 @@
 ## useful commands
 
 `tac` reverse of `cat`
+
+## du
+
+* first level directories sorted by size: `du -h --max-depth=2 /var | sort -n -r`

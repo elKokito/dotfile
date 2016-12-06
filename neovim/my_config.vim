@@ -17,15 +17,15 @@ set wildmode=full
 set termguicolors
 set showcmd
 set noshowmode
+set inccommand=split
 noswapfile
 
 filetype on
 filetype plugin on
 filetype plugin indent on
 
-nnoremap <leader>w :w<CR>
+nnoremap <leader>wq :wq<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
-nnoremap Z zt
 
 " windows
 " ------------------------------------------------->
