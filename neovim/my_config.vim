@@ -17,6 +17,7 @@ set wildmode=full
 set termguicolors
 set showcmd
 set noshowmode
+set icm=split
 set inccommand=split
 noswapfile
 
@@ -31,7 +32,6 @@ nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 " ------------------------------------------------->
 " split
 nnoremap <silent> <leader>v <C-w>v<C-w>l
-nnoremap <silent> <leader>s <C-w>s<C-w>j
 nnoremap <silent> <leader>o <C-w>s<C-w>j
 " move
 nnoremap <silent> mwh <C-W>H
@@ -113,6 +113,7 @@ nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 map <leader>ds <C-W>v<C-W>l<leader>ddzz
 map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzz
+nnoremap <leader>ss :%s/
 
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None
