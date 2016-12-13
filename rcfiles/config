@@ -10,8 +10,8 @@ bindsym $mod+Delete kill
 # bindsym $mod+p exec dmenu_run
 
 # touchpad enable disabled
-bindsym $mod+plus exec xinput set-prop 11 "Device Enabled" 1
-bindsym $mod+minus exec xinput set-prop 11 "Device Enabled" 0
+bindsym $mod+plus exec xinput set-prop 14 "Device Enabled" 1
+bindsym $mod+minus exec xinput set-prop 14 "Device Enabled" 0
 
 # backlight
 bindsym $mod+Up exec xbacklight -inc 20
@@ -206,16 +206,16 @@ new_window pixel 1
 mouse_warping none
 focus_follows_mouse no
 
-workspace 1 output DP1
-workspace 2 output DP1
-workspace 3 output DP1
-workspace 4 output DP1
-workspace 5 output DP1
-workspace 6 output DP2
-workspace 7 output DP2
-workspace 8 output DP2
-workspace 9 output DP2
-workspace 10 output DP2
+workspace 1 output HDMI2
+workspace 2 output HDMI2
+workspace 3 output HDMI2
+workspace 4 output HDMI1
+workspace 5 output HDMI1
+workspace 6 output HDMI1
+workspace 7 output HDMI1
+workspace 8 output eDP1
+workspace 9 output eDP1
+workspace 10 output eDP1
 
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-starup-id sh ~/.localsettings.sh
