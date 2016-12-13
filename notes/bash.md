@@ -19,3 +19,13 @@
 ## du
 
 * first level directories sorted by size: `du -h --max-depth=2 /var | sort -n -r`
+
+## loop lines of file
+
+```bash
+
+while IFS= read -r line; do
+  echo $line
+  done < "$1"
+
+```
