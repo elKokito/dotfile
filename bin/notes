@@ -12,7 +12,7 @@ done
 shift $[ $OPTIND -1 ]
 
 if [ "$is_edit" = true ]; then
-  nvim $HOME/dotfile/notes/$1
+  nvim $HOME/Dropbox/notes/$1
 else
-  node ~/dotfile/bin/to_markdown.js $HOME/dotfile/notes/$1 --color | less
+  node ~/dotfile/bin/to_markdown.js $HOME/Dropbox/notes/$1 --color | less
 fi
