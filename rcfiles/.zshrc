@@ -51,10 +51,6 @@ if [ -d "$HOME/dotfile" ]; then
     fpath=($HOME/dotfile/bin/completion $fpath)
 fi
 
-if [ -f "$HOME/.localsettings.sh" ]; then
-    . $HOME/.localsettings.sh
-fi
-
 zgen oh-my-zsh
 
 zgen load jocelynmallon/zshmarks
