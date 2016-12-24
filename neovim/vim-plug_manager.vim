@@ -5,15 +5,13 @@ endfunction
 call plug#begin("~/.config/nvim/plugged")
 
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-" deoplete typescript completion
-" Plug 'https://github.com/Shougo/vimproc.vim.git', { 'do': 'make' }
 
 " python
 Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'zchee/deoplete-jedi'
 Plug 'hynek/vim-python-pep8-indent'
-Plug 'https://github.com/tmhedberg/SimpylFold'
+Plug 'pearofducks/ansible-vim'
 
 " javascript && typescript
 Plug 'https://github.com/leafgarland/typescript-vim.git'
@@ -72,4 +70,3 @@ source ~/.config/nvim/plugin_config/cpp.vim
 source ~/.config/nvim/plugin_config/deoplete.vim
 source ~/.config/nvim/plugin_config/tagbar.vim
 source ~/.config/nvim/plugin_config/scratch.vim
-source ~/.config/nvim/plugin_config/simplefold.vim
