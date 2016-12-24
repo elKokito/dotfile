@@ -9,5 +9,5 @@ focused_monitor=$(i3-msg -t get_workspaces | jq '.[] | select(.focused==true).ou
 
 if [ $selected_workspace ]; then
   i3-msg workspace $selected_workspace > /dev/null
-  i3-msg move workspace to output $focused_monitor
+  # i3-msg move workspace to output $focused_monitor
 fi
