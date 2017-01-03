@@ -32,8 +32,8 @@ bindcode 150 exec amixer -c1 sset Master 5%+
 
 # common application
 bindsym $mod+Return exec konsole
-bindsym $mod+BackSpace exec google-chrome
-bindsym $mod+g exec google-chrome --new-window `xclip -selection clipboard -o`
+bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
+bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
 bindsym $mod+backslash exec "konsole -e ~/.local/bin/bpython"
 
 # rofi keybings
