@@ -27,9 +27,13 @@ Plug 'zchee/deoplete-clang'
 " markdown
 Plug 'dhruvasagar/vim-table-mode'
 
+" taskwarrior
+Plug 'blindFS/vim-taskwarrior'
+
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+Plug 'idanarye/vim-merginal'
 
 " maker
 Plug 'https://github.com/benekastah/neomake.git'

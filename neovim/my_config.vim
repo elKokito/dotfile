@@ -111,8 +111,8 @@ hi LineNr guibg=none
 
 nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
-map <leader>ds <C-W>v<C-W>l<leader>ddzz
-map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzz
+map <leader>ds <C-W>v<C-W>l<leader>ddzt
+map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzt
 nnoremap <leader>ss :%s/
 
 highlight DiffAdd guifg=green guibg=None

@@ -38,7 +38,7 @@ alias n='nvim .'
 
 autoload -z edit-command-line
 zle -N edit-command-line
-bindkey "^[e" edit-command-line
+bindkey "^[v" edit-command-line
 
 
 if [ -d "$HOME/bin" ] ; then
