@@ -228,6 +228,6 @@ workspace 10 output eDP1
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id sh ~/.localsettings.sh
 exec --no-startup-id compton -b
-exec --no-startup-id feh --bg-scale ~/Downloads/yCbxcdB-dark-metal-wallpaper.jpg
+exec --no-startup-id feh --bg-scale ~/Dropbox/wallpaper/zen_monk-wallpaper-1920x1080.jpg
 exec --no-startup-id dropbox start &
 exec --no-startup-id numlockx on
