@@ -14,21 +14,21 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'pearofducks/ansible-vim'
 
 " javascript && typescript
-Plug 'https://github.com/leafgarland/typescript-vim.git'
-Plug 'https://github.com/pangloss/vim-javascript.git'
-Plug 'https://github.com/mxw/vim-jsx.git'
-Plug 'https://github.com/Quramy/tsuquyomi.git'
+" Plug 'https://github.com/leafgarland/typescript-vim.git'
+" Plug 'https://github.com/pangloss/vim-javascript.git'
+" Plug 'https://github.com/mxw/vim-jsx.git'
+" Plug 'https://github.com/Quramy/tsuquyomi.git'
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'https://github.com/ternjs/tern_for_vim.git'
 
 " C/C++
-Plug 'zchee/deoplete-clang'
+" Plug 'zchee/deoplete-clang'
 
 " markdown
-Plug 'dhruvasagar/vim-table-mode'
+Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 
 " taskwarrior
-Plug 'blindFS/vim-taskwarrior'
+" Plug 'blindFS/vim-taskwarrior'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -67,10 +67,11 @@ source ~/.config/nvim/plugin_config/airline_config.vim
 source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
-source ~/.config/nvim/plugin_config/neomake.vim
+" source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
-source ~/.config/nvim/plugin_config/cpp.vim
+" source ~/.config/nvim/plugin_config/cpp.vim
 source ~/.config/nvim/plugin_config/deoplete.vim
-source ~/.config/nvim/plugin_config/tagbar.vim
-source ~/.config/nvim/plugin_config/scratch.vim
+" source ~/.config/nvim/plugin_config/tagbar.vim
+autocmd BufWrite *.py Neomake pylint
+" source ~/.config/nvim/plugin_config/scratch.vim

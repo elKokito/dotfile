@@ -19,6 +19,7 @@ set showcmd
 set noshowmode
 set icm=split
 set inccommand=split
+set switchbuf=useopen,usetab,newtab
 noswapfile
 
 filetype on
@@ -111,6 +112,7 @@ hi LineNr guibg=none
 
 nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
+autocmd FileType qf nnoremap <buffer> <enter> <enter>
 map <leader>ds <C-W>v<C-W>l<leader>ddzt
 map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzt
 nnoremap <leader>ss :%s/
