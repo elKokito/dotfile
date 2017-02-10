@@ -22,11 +22,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # control volume
 # bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
-bindcode 69 exec amixer sset Master 5%+
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindcode 69 exec amixer -D pulse sset Master 5%+
 # bindsym XF86AudioLowerVolume exec amixer -c1 sset Master 5%-
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
-bindcode 68 exec amixer sset Master 5%-
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+bindcode 68 exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 150 exec amixer -c1 sset Master 5%+
