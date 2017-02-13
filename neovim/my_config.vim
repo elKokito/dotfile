@@ -45,7 +45,6 @@ nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
 tnoremap <ESC> <C-\><C-n>
-nnoremap <leader><Enter> :terminal<CR>
 " tnoremap <silent> <C-h> <C-\><C-n><C-W>h
 " tnoremap <silent> <C-l> <C-\><C-n><C-W>l
 " resize
@@ -53,10 +52,15 @@ nnoremap <silent> + :vertical resize +2<CR>
 nnoremap <silent> - :vertical resize -2<CR>
 " <------------------------------------------------- "
 
+" terminal
+nnoremap <leader><Enter> :terminal<CR>
+nnoremap <silent> <leader>t<Enter> <C-W>v<C-W>l<C-W>T :terminal<CR>
+nnoremap <silent> <leader>tv<Enter> <C-W>v<C-W>l :terminal<CR>
+nnoremap <silent> <leader>to<Enter> <C-W>v<C-W>j :terminal<CR>
+
 " tabs
 " -------------------------------------------------> "
 nnoremap <silent> <leader>tw :tabnew %<CR>
-nnoremap <silent> <leader>t<Enter> <C-W>v<C-W>l<C-W>T :terminal<CR>
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
 nnoremap gr gT
@@ -159,15 +163,15 @@ function! ModeSelectBufEnter()
 endfunction
 au FileType qf call AdjustWindowHeight(3, 20)
 function! AdjustWindowHeight(minheight, maxheight)
-       let l = 1
-       let n_lines = 0
-       let w_width = winwidth(0)
-       while l <= line('$')
-           " number to float for division
-           let l_len = strlen(getline(l)) + 0.0
-           let line_width = l_len/w_width
-           let n_lines += float2nr(ceil(line_width))
-           let l += 1
-       endw
-       exe max([min([n_lines, a:maxheight]), a:minheight]) . "wincmd _"
-   endfunction
+    let l = 1
+    let n_lines = 0
+    let w_width = winwidth(0)
+    while l <= line('$')
+        " number to float for division
+        let l_len = strlen(getline(l)) + 0.0
+        let line_width = l_len/w_width
+        let n_lines += float2nr(ceil(line_width))
+        let l += 1
+    endw
+    exe max([min([n_lines, a:maxheight]), a:minheight]) . "wincmd _"
+endfunction
