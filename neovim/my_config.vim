@@ -54,13 +54,13 @@ nnoremap <silent> - :vertical resize -2<CR>
 
 " terminal
 nnoremap <leader><Enter> :terminal<CR>
-nnoremap <silent> <leader>t<Enter> <C-W>v<C-W>l<C-W>T :terminal<CR>
-nnoremap <silent> <leader>tv<Enter> <C-W>v<C-W>l :terminal<CR>
-nnoremap <silent> <leader>to<Enter> <C-W>v<C-W>j :terminal<CR>
+nnoremap <silent> <leader>tt <C-W>v<C-W>l<C-W>T :terminal<CR>
+nnoremap <silent> <leader>tv <C-W>v<C-W>l :terminal<CR>
+nnoremap <silent> <leader>to <C-W>s<C-W>j :terminal<CR>
 
 " tabs
 " -------------------------------------------------> "
-nnoremap <silent> <leader>tw :tabnew %<CR>
+nnoremap <silent> t :tabnew %<CR>
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
 nnoremap gr gT
