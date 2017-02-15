@@ -60,7 +60,6 @@ nnoremap <silent> <leader>to <C-W>s<C-W>j :terminal<CR>
 
 " tabs
 " -------------------------------------------------> "
-nnoremap <silent> t :tabnew %<CR>
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
 nnoremap gr gT

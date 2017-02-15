@@ -41,10 +41,10 @@ bindsym $mod+backslash exec "konsole -e ~/.local/bin/bpython"
 # rofi keybings
 bindsym $mod+p exec rofi -show run
 bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
+bindsym $mod+slash exec ~/dotfile/bin/rofi/send_container_to_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/create_workspace
 bindsym $mod+s exec ~/dotfile/bin/rofi/create_scratchpad
 bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
-bindsym $mod+slash exec ~/dotfile/bin/rofi/move_to_other_motinor.sh
 bindsym $mod+i exec ~/Desktop/clipmenu/clipmenu -font Anonymice:size=12
 
 # scratchpad
@@ -117,11 +117,16 @@ bindsym $mod+Shift+l move right
 
 bindsym $mod+Shift+v split vertical
 bindsym $mod+Shift+o split horizontal
+bindsym Mod1+v split vertical
+bindsym Mod1+h split horizontal
 
 # change container layout (tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
-bindsym $mod+Shift+t layout tabbed
-bindsym $mod+Shift+a layout toggle split
+# bindsym $mod+Shift+s layout stacking
+# bindsym $mod+Shift+t layout tabbed
+bindsym Mod1+s layout stacking
+bindsym Mod1+t layout tabbed
+# bindsym Mod1+v layout splitv
+# bindsym Mod1+h layout splith
 bindsym $mod+Shift+i floating toggle
 
 

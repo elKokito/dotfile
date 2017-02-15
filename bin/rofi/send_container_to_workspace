@@ -1,0 +1,12 @@
+#!/bin/bash
+
+get_workspaces() {
+    i3-msg -t get_workspaces | tr ',' '\n' | grep "name" | sed 's/"name":"\(.*\)"/\1/g' | sort -n
+}
+
+new_workspace_name=$(get_workspaces | rofi -auto-select -dmenu -p 'workspace => ')
+echo $new_workspace_name
+if [ $new_workspace_name ]; then
+    i3-msg move container to workspace $new_workspace_name > /dev/null
+    i3-msg workspace $new_workspace_name
+fi
