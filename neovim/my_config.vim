@@ -19,8 +19,8 @@ set showcmd
 set noshowmode
 set icm=split
 set inccommand=split
-" set switchbuf=useopen,usetab,newtab
-noswapfile
+set autoread
+set noswapfile
 
 filetype on
 filetype plugin on
