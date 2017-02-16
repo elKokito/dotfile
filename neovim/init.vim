@@ -5,7 +5,6 @@ autocmd BufEnter *.ts set syntax=typescript
 autocmd BufEnter *.ts set filetype=typescript
 autocmd BufEnter *.js set syntax=javascript
 autocmd BufEnter *.js set filetype=javascript
-autocmd BufEnter *.pp set filetype=ruby
 
 set background=dark
 let g:monokai_term_italic = 1

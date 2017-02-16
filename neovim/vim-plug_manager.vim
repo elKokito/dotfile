@@ -24,6 +24,9 @@ Plug 'pearofducks/ansible-vim'
 " C/C++
 " Plug 'zchee/deoplete-clang'
 
+" puppet ruby
+Plug 'https://github.com/rodjek/vim-puppet'
+
 " markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 
