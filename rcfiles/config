@@ -117,8 +117,8 @@ bindsym $mod+Shift+l move right
 
 bindsym $mod+Shift+v split vertical
 bindsym $mod+Shift+o split horizontal
-bindsym Mod1+v split vertical
-bindsym Mod1+h split horizontal
+bindsym Mod1+v split horizontal
+bindsym Mod1+s split vertical
 
 # change container layout (tabbed, toggle split)
 # bindsym $mod+Shift+s layout stacking
