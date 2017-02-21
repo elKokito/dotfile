@@ -45,7 +45,7 @@ bindsym $mod+slash exec ~/dotfile/bin/rofi/send_container_to_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/create_workspace
 bindsym $mod+s exec ~/dotfile/bin/rofi/create_scratchpad
 bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
-bindsym $mod+i exec ~/Desktop/clipmenu/clipmenu -font Anonymice:size=12
+bindsym $mod+i exec ~/build/clipmenu/clipmenu -font Anonymice:size=12
 
 # scratchpad
 bindsym $mod+Shift+space move scratchpad, resize set 1400 900
