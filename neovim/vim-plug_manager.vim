@@ -21,6 +21,7 @@ Plug 'pearofducks/ansible-vim'
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'https://github.com/ternjs/tern_for_vim.git'
 
+Plug 'https://github.com/jceb/vim-orgmode'
 " C/C++
 " Plug 'zchee/deoplete-clang'
 
