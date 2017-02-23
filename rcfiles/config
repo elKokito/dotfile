@@ -20,6 +20,10 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym $mod+Down exec xbacklight -dec 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
+# cmus
+bindsym XF86AudioNext exec cmus-remote --next
+bindsym XF86AudioPlay exec cmus-remote --pause
+
 # control volume
 # bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
@@ -123,7 +127,7 @@ bindsym Mod1+s split vertical
 # change container layout (tabbed, toggle split)
 # bindsym $mod+Shift+s layout stacking
 # bindsym $mod+Shift+t layout tabbed
-bindsym Mod1+s layout stacking
+bindsym Mod1+f layout stacking
 bindsym Mod1+t layout tabbed
 # bindsym Mod1+v layout splitv
 # bindsym Mod1+h layout splith
