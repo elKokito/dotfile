@@ -33,7 +33,7 @@ nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 " ------------------------------------------------->
 " split
 nnoremap <silent> <leader>v <C-w>v<C-w>l
-nnoremap <silent> <leader>o <C-w>s<C-w>j
+nnoremap <silent> <leader>s <C-w>s<C-w>j
 " move
 nnoremap <silent> mwh <C-W>H
 nnoremap <silent> mwj <C-W>J
@@ -118,7 +118,6 @@ autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 autocmd FileType qf nnoremap <buffer> <enter> <enter>
 map <leader>ds <C-W>v<C-W>l<leader>ddzt
 map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzt
-nnoremap <leader>ss :%s/
 
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None
