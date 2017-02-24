@@ -5,4 +5,7 @@ nnoremap <leader>b :Buffers<CR><up><down>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gs :GFiles?<CR>
 
-let g:fzf_action = { 'ctrl-n': 'tab split' }
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }

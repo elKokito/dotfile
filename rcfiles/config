@@ -125,7 +125,7 @@ bindsym Mod1+v split horizontal
 bindsym Mod1+s split vertical
 
 # change container layout (tabbed, toggle split)
-bindsym Mod1+f layout stacking
+bindsym Mod1+o layout stacking
 bindsym Mod1+t layout tabbed
 bindsym $mod+Shift+i floating toggle
 

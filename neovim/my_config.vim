@@ -21,6 +21,8 @@ set icm=split
 set inccommand=split
 set autoread
 set noswapfile
+set splitbelow
+set splitright
 
 filetype on
 filetype plugin on
