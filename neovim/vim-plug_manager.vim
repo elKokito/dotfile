@@ -70,7 +70,7 @@ call plug#end()
 source ~/.config/nvim/plugin_config/airline_config.vim
 source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/nerdtreecomment_config.vim
-source ~/.config/nvim/plugin_config/jedi_config.vim
+" source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 " source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim

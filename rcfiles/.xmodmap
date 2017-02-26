@@ -2,13 +2,13 @@ remove Lock = Caps_Lock
 keysym Escape = Caps_Lock
 keysym Caps_Lock = Escape
 add Lock = Caps_Lock
-! keycode 64 = NoSymbol NoSymbol
-! keycode 64 = Mode_switch
+keycode 64 = NoSymbol NoSymbol
+keycode 64 = Mode_switch
 
-keysym h = h H Left NoSymbol NoSymbol NoSymbol
-keysym j = j J Down NoSymbol NoSymbol NoSymbol
-keysym k = k K Up NoSymbol NoSymbol NoSymbol
-keysym l = l L Right NoSymbol lstroke Lstroke
+keysym h = h H Left Left Left Left Left Left Left
+keysym j = j J Down Down Down Down
+keysym k = k K Up Up Up Up Up Up Up Up
+keysym l = l L Right Right Right Right
 
 ! 107 - print
 ! 118 - insert
