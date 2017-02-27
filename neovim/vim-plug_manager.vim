@@ -21,6 +21,7 @@ Plug 'pearofducks/ansible-vim'
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'https://github.com/ternjs/tern_for_vim.git'
 
+Plug 'https://github.com/jceb/vim-orgmode'
 " C/C++
 " Plug 'zchee/deoplete-clang'
 
@@ -68,7 +69,8 @@ call plug#end()
 
 source ~/.config/nvim/plugin_config/airline_config.vim
 source ~/.config/nvim/plugin_config/nerdtree_config.vim
-source ~/.config/nvim/plugin_config/jedi_config.vim
+source ~/.config/nvim/plugin_config/nerdtreecomment_config.vim
+" source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
 " source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim

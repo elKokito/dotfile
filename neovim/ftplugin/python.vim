@@ -3,6 +3,7 @@ setlocal expandtab
 setlocal shiftwidth=4
 setlocal softtabstop=4
 
+source ~/.config/nvim/plugin_config/jedi_config.vim
 nnoremap <leader>dd :call jedi#goto_definitions()<CR>
 nnoremap <leader>ga :call jedi#goto_assignments()<CR>
 nnoremap <leader>gu :call jedi#usages()<CR>

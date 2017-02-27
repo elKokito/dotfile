@@ -3,9 +3,9 @@
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt-get update
 
-sudo apt-get install zsh ctags tmux xclip neovim w3m w3m-img gawk silversearcher-ag git-extras \
-    python-software-properties clang python3-pip tig jq rofi \
-    kdiff3 -y
+sudo apt-get install zsh xclip neovim w3m w3m-img gawk silversearcher-ag git-extras \
+    python-software-properties python3-pip python-pip tig jq rofi \
+    kdiff3 curl -y
 
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install nodejs -y
@@ -15,10 +15,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
-mkdir -p $HOME/.i3/
+mkdir -p $HOME/.config/i3/
 mkdir -p $HOME/.config/nvim/
 
-ln -s ~/dotfile/rcfiles/config ~/.i3/config
+ln -s ~/dotfile/rcfiles/config ~/.config/i3/
 ln -s ~/dotfile/rcfiles/i3status.conf ~/.i3/i3status.conf
 rm ~/.zshrc
 ln -s ~/dotfile/rcfiles/.zshrc ~/.zshrc
@@ -33,5 +33,5 @@ exec zsh
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd
 
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
