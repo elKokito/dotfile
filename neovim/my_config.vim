@@ -54,6 +54,8 @@ tnoremap <ESC> <C-\><C-n>
 " resize
 nnoremap <silent> + :vertical resize +2<CR>
 nnoremap <silent> - :vertical resize -2<CR>
+nnoremap <silent> <S-up> :resize +2<CR>
+nnoremap <silent> <S-down> :resize -2<CR>
 " <------------------------------------------------- "
 
 " terminal

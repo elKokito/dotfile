@@ -1,4 +1,4 @@
-nnoremap <leader>z :FZF!<CR><up><down>
+nnoremap <leader>z :FZF<CR><up><down>
 nnoremap <leader>a :Ag! 
 nnoremap W :Windows!<CR><up><down>
 nnoremap <leader>b :Buffers<CR><up><down>
