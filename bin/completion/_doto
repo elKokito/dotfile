@@ -1,0 +1,8 @@
+#compdef doto
+
+_doto() {
+  note_files=`ls --format=commas ~/Dropbox/org`
+  _values : `echo $note_files | tr ',' ' '`
+}
+
+_doto
