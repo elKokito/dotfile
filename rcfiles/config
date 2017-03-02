@@ -40,14 +40,13 @@ bindcode $mod+110 exec ~/dotfile/bin/lockme
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
 bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
-bindsym $mod+backslash exec "konsole -e ~/.local/bin/bpython"
 
 # rofi keybings
 bindsym $mod+p exec rofi -show run
 bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
 bindsym $mod+slash exec ~/dotfile/bin/rofi/send_container_to_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/create_workspace
-bindsym $mod+s exec ~/dotfile/bin/rofi/create_scratchpad
+bindsym $mod+backslash exec ~/dotfile/bin/rofi/create_scratchpad
 bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
 bindsym $mod+i exec ~/build/clipmenu/clipmenu -font Anonymice:size=12
 
@@ -92,9 +91,6 @@ bindsym $mod+n [con_mark="nnn"] scratchpad show, resize set 1400 800
 bindsym $mod+Ctrl+Shift+u mark "uuu", move scratchpad
 bindsym $mod+u [con_mark="uuu"] scratchpad show, resize set 1400 800
 
-bindsym $mod+Ctrl+Shift+o mark "ooo", move scratchpad
-bindsym $mod+o [con_mark="ooo"] scratchpad show, resize set 1400 800
-
 bindsym $mod+Ctrl+Shift+d mark "ddd", move scratchpad
 bindsym $mod+d [con_mark="ddd"] scratchpad show, resize set 1400 800
 
@@ -121,12 +117,12 @@ bindsym $mod+Shift+l move right
 
 bindsym $mod+Shift+v split vertical
 bindsym $mod+Shift+o split horizontal
-bindsym Mod1+v split horizontal
-bindsym Mod1+s split vertical
+bindsym $mod+v split horizontal
+bindsym $mod+s split vertical
 
 # change container layout (tabbed, toggle split)
-bindsym Mod1+o layout stacking
-bindsym Mod1+t layout tabbed
+bindsym $mod+o layout stacking
+bindsym $mod+t layout tabbed
 bindsym $mod+Shift+i floating toggle
 
 
