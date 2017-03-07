@@ -1,7 +1,7 @@
 #!/bin/bash
 
 list_scratchpad() {
-  i3-msg -t get_tree | jq '.nodes[].nodes[].nodes[] | select(.name=="__i3_scratch") | .floating_nodes[].nodes[].marks[]'
+  i3-msg -t get_tree | jq '.nodes[].nodes[].nodes[] | select(.name=="__i3_scratch") | .floating_nodes[].nodes[].mark'
 }
 
 get_scratchpad_info() {
