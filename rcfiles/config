@@ -94,9 +94,6 @@ bindsym $mod+u [con_mark="uuu"] scratchpad show, resize set 1400 800
 bindsym $mod+Ctrl+Shift+d mark "ddd", move scratchpad
 bindsym $mod+d [con_mark="ddd"] scratchpad show, resize set 1400 800
 
-bindsym $mod+Ctrl+Shift+t mark "ttt", move scratchpad
-bindsym $mod+t [con_mark="ttt"] scratchpad show, resize set 1400 800
-
 bindsym $mod+Ctrl+Shift+y mark "yyy", move scratchpad
 bindsym $mod+y [con_mark="yyy"] scratchpad show, resize set 1400 800
 
