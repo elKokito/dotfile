@@ -38,7 +38,8 @@ bindcode $mod+110 exec ~/dotfile/bin/lockme
 
 # common application
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
+bindsym $mod+BackSpace exec google-chrome
+# bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
 bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
 
 # rofi keybings
@@ -219,7 +220,7 @@ workspace 3 output HDMI-1
 workspace 4 output DP-1
 workspace 5 output DP-1
 workspace 6 output DP-1
-workspace 7 output HDMI-2
+workspace 7 output DP-1
 workspace 8 output HDMI-2
 workspace 9 output HDMI-2
 workspace 10 output HDMI-2
