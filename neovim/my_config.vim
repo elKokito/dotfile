@@ -31,6 +31,7 @@ filetype plugin indent on
 " help in vertical mode
 cnoreabbrev h vert help | wincmd L
 nnoremap <leader>wq :wq<CR>
+nnoremap <leader>q: q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 
 " windows
@@ -122,7 +123,10 @@ hi LineNr guibg=none
 nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 autocmd FileType qf nnoremap <buffer> <enter> <enter>
-map <leader>ds <C-W>v<C-W>l<leader>ddzt
+
+" change this
+map <leader>dv <C-W>v<C-W>l<leader>ddzt
+map <leader>ds <C-W>s<C-W>j<leader>ddzt
 map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzt
 
 highlight DiffAdd guifg=green guibg=None
