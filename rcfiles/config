@@ -35,6 +35,7 @@ bindsym XF86AudioMute exec amixer set Master toggle && amixer set Headphone togg
 bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 150 exec amixer -c1 sset Master 5%+
 bindcode $mod+110 exec ~/dotfile/bin/lockme
+bindcode $mod+115 exec systemctl suspend
 
 # common application
 bindsym $mod+Return exec gnome-terminal
