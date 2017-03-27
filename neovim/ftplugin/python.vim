@@ -8,3 +8,6 @@ nnoremap <leader>dd :call jedi#goto_definitions()<CR>
 nnoremap <leader>ga :call jedi#goto_assignments()<CR>
 nnoremap <leader>gu :call jedi#usages()<CR>
 nnoremap <leader>sd :call jedi#show_documentation()<CR>
+
+" run current python script
+nnoremap <leader>r <C-W>s<C-W>j :terminal python %<CR>
