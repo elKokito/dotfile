@@ -39,8 +39,8 @@ bindcode $mod+115 exec systemctl suspend
 
 # common application
 bindsym $mod+Return exec gnome-terminal
-bindsym $mod+BackSpace exec google-chrome
-# bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
+bindsym $mod+n exec ~/dotfile/bin/open_clipboard_in_nvim
+bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
 bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
 
 # rofi keybings
@@ -86,9 +86,6 @@ bindsym $mod+b [con_mark="bbb"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
 bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1400 800
-
-bindsym $mod+Ctrl+Shift+n mark "nnn", move scratchpad
-bindsym $mod+n [con_mark="nnn"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+u mark "uuu", move scratchpad
 bindsym $mod+u [con_mark="uuu"] scratchpad show, resize set 1400 800

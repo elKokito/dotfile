@@ -1,6 +1,6 @@
 [merge]
 	tool = vimdiff
-	conflicstyle = diff3
+	conflictstyle = diff3
 [mergetool "vimdiff"]
 	path = nvim
 	prompt = false

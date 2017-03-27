@@ -43,7 +43,7 @@ Plug 'idanarye/vim-merginal'
 Plug 'https://github.com/benekastah/neomake.git'
 
 "tags
-" Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
 " neovim enhancement
 Plug 'https://github.com/scrooloose/nerdtree.git'
@@ -77,6 +77,6 @@ source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
 " source ~/.config/nvim/plugin_config/cpp.vim
 source ~/.config/nvim/plugin_config/deoplete.vim
-" source ~/.config/nvim/plugin_config/tagbar.vim
+source ~/.config/nvim/plugin_config/tagbar.vim
 autocmd BufWrite *.py Neomake pylint
 " source ~/.config/nvim/plugin_config/scratch.vim
