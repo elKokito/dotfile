@@ -26,7 +26,6 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 
-nnoremap <ESC> :q<CR>
 nnoremap <leader>w :w<CR>
 
 " help in vertical mode
