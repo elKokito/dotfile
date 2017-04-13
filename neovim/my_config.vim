@@ -27,6 +27,7 @@ filetype plugin on
 filetype plugin indent on
 
 nnoremap <leader>w :w<CR>
+nnoremap <leader>e :q<CR>
 
 " help in vertical mode
 cnoreabbrev h vert help | wincmd L
