@@ -5,8 +5,6 @@ highlight Pmenu ctermfg=15
 
 let g:mapleader=" "
 
-" set omnifunc=syntaxcomplete#Complete
-
 set number
 set ruler
 set expandtab
@@ -27,6 +25,8 @@ set splitright
 filetype on
 filetype plugin on
 filetype plugin indent on
+
+nnoremap <ESC> :q<CR>
 
 " help in vertical mode
 cnoreabbrev h vert help | wincmd L
