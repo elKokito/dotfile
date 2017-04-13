@@ -30,8 +30,6 @@ filetype plugin indent on
 
 " help in vertical mode
 cnoreabbrev h vert help | wincmd L
-nnoremap <leader>wq :wq<CR>
-nnoremap <leader>e :q<CR>
 nnoremap <leader>1 yiw :Ag! <C-r>0<CR>
 
 " windows
