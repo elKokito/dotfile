@@ -6,13 +6,14 @@ highlight Pmenu ctermfg=15
 let g:mapleader=" "
 
 set number
+" set guicursor=
 set ruler
 set expandtab
 set showmatch
 set ignorecase
 set list listchars=tab:\ \ ,trail:·
 set wildmode=full
-set termguicolors
+" set termguicolors
 set showcmd
 set noshowmode
 set icm=split

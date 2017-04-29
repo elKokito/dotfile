@@ -5,6 +5,8 @@ autocmd BufEnter *.ts set syntax=typescript
 autocmd BufEnter *.ts set filetype=typescript
 autocmd BufEnter *.js set syntax=javascript
 autocmd BufEnter *.js set filetype=javascript
+autocmd BufEnter *.sls set filetype=yaml
+autocmd BufEnter *.sls set syntax=yaml
 
 set background=dark
 let g:monokai_term_italic = 1
