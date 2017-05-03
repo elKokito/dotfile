@@ -72,11 +72,10 @@ source ~/.config/nvim/plugin_config/nerdtree_config.vim
 source ~/.config/nvim/plugin_config/nerdtreecomment_config.vim
 " source ~/.config/nvim/plugin_config/jedi_config.vim
 source ~/.config/nvim/plugin_config/easymotion_config.vim
-" source ~/.config/nvim/plugin_config/neomake.vim
+source ~/.config/nvim/plugin_config/neomake.vim
 source ~/.config/nvim/plugin_config/fzf.vim
 source ~/.config/nvim/plugin_config/gitgutter.vim
 " source ~/.config/nvim/plugin_config/cpp.vim
 source ~/.config/nvim/plugin_config/deoplete.vim
 source ~/.config/nvim/plugin_config/tagbar.vim
-autocmd BufWrite *.py Neomake pylint
 " source ~/.config/nvim/plugin_config/scratch.vim

@@ -38,5 +38,17 @@
                   " " \}
 
 " if executable('pylint')
-autocmd BufWrite *.py Neomake pylint
+" let g:neomake_python_flake8_maker = {
+    " \ 'args': ['--max-line-length=100'],
+    " \ }
+" let g:neomake_python_enabled_makers = ['flake8']
+let g:neomake_python_flake8_maker = {
+    \ 'args': ['--max-line-length=100',  '--format=default'],
+    \ 'errorformat':
+        \ '%E%f:%l: could not compile,%-Z%p^,' .
+        \ '%A%f:%l:%c: %t%n %m,' .
+        \ '%A%f:%l: %t%n %m,' .
+        \ '%-G%.%#',
+    \ }
+let g:neomake_python_enabled_makers = ['flake8']
 " endif
