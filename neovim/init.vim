@@ -28,9 +28,17 @@ hi LineBr ctermfg=grey
 hi LineNr guibg=none
 hi signcolumn guibg=none
 
-highlight DiffAdd guifg=green guibg=None
-highlight DiffDelete guifg=red guibg=None
-highlight DiffChange guifg=orange guibg=None
+hi DiffAdd      gui=none    guifg=NONE          guibg=#bada9f
+hi DiffChange   gui=none    guifg=NONE          guibg=#e5d5ac
+hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#ffb0b0
+hi DiffText     gui=none    guifg=NONE          guibg=#8cbee2
+hi DiffAdd      cterm=none    ctermfg=Green          ctermbg=None
+hi DiffChange   cterm=none    ctermfg=Blue          ctermbg=None
+hi DiffDelete   cterm=bold    ctermfg=Red           ctermbg=None
+hi DiffText     cterm=none    ctermfg=Blue          ctermbg=None
+" highlight DiffAdd guifg=green guibg=None
+" highlight DiffDelete guifg=red guibg=None
+" highlight DiffChange guifg=orange guibg=None
 
 nnoremap <leader>L :diffget LO<CR>
 nnoremap <leader>B :diffget BA<CR>
