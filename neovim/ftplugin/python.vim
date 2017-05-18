@@ -7,6 +7,7 @@ source ~/.config/nvim/plugin_config/jedi_config.vim
 nnoremap <leader>dd :call jedi#goto_definitions()<CR>
 nnoremap <leader>ga :call jedi#goto_assignments()<CR>
 nnoremap <leader>gu :call jedi#usages()<CR>
+nnoremap <leader>dt <C-W>v<C-W>T :call jedi#goto_definitions()<CR>
 
 " run current python script
 nnoremap <leader>r <C-W>s<C-W>j :terminal python %<CR>

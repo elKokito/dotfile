@@ -29,6 +29,7 @@ filetype plugin indent on
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
+nnoremap U :earlier 1f<CR>
 
 " help in vertical mode
 cnoreabbrev h vert help | wincmd L
@@ -50,8 +51,7 @@ nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
 tnoremap <ESC> <C-\><C-n>
-" tnoremap <silent> <C-h> <C-\><C-n><C-W>h
-" tnoremap <silent> <C-l> <C-\><C-n><C-W>l
+
 " resize
 nnoremap <silent> + :vertical resize +2<CR>
 nnoremap <silent> - :vertical resize -2<CR>
@@ -69,6 +69,7 @@ nnoremap <silent> <leader>ts <C-W>s<C-W>j :terminal<CR>
 " -------------------------------------------------> "
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
+nnoremap <silent> mtn <C-W>v<C-W>T
 nnoremap gr gT
 inoremap <silent> <C-l> <C-PageDown>
 nnoremap <silent> <C-l> gt
@@ -124,17 +125,11 @@ nnoremap <leader>0 :source ~/.config/nvim/init.vim<CR>
 autocmd FileType qf nnoremap <buffer> t <C-W><Enter><C-W>T
 autocmd FileType qf nnoremap <buffer> <enter> <enter>
 
-" change this
-map <leader>dv <C-W>v<C-W>l<leader>ddzt
-map <leader>ds <C-W>s<C-W>j<leader>ddzt
-map <leader>dt <C-W>v<C-W>l<C-W>T<leader>ddzt
-
 highlight DiffAdd guifg=green guibg=None
 highlight DiffDelete guifg=red guibg=None
 highlight DiffChange guifg=orange guibg=None
 
 
-" testing "
 au BufLeave * call ModeSelectBufLeave()
 au BufEnter * call ModeSelectBufEnter()
 
