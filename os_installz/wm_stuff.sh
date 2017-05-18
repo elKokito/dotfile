@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install xorg i3 feh libxss1 libappindicator1 libindicator7 \
+sudo apt-get install xorg feh libxss1 libappindicator1 libindicator7 \
     zathura mpv shutter numlockx i3blocks xsel software-properties-common -y
 
 git clone https://github.com/soimort/translate-shell ~/build/trans
