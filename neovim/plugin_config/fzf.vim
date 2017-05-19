@@ -1,8 +1,6 @@
-nnoremap <leader>z :FZF<CR>
-nnoremap <leader>a :Ag! 
-nnoremap W :Windows!<CR>
-nnoremap B :Buffers!<CR>
-nnoremap <leader>b :Buffers<CR><up><down>
+nnoremap <silent> <leader><leader>fz :FZF!<CR>
+nnoremap <leader><leader>fa :Ag! 
+nnoremap <silent> <leader><leader>fl :Lines!<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gs :GFiles?<CR>
 

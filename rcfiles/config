@@ -45,6 +45,7 @@ bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-
 
 # rofi keybings
 bindsym $mod+p exec rofi -show run
+bindsym $mod+w exec rofi -show window
 bindsym $mod+semicolon exec ~/dotfile/bin/rofi/goto_workspace
 bindsym $mod+slash exec ~/dotfile/bin/rofi/send_container_to_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/create_workspace
@@ -204,7 +205,7 @@ bar {
    }
 }
 # class                 border  backg   text    indica.
-client.focused          #30363b #696969 #c0c0c0 #ffffff
+client.focused          #30363b #808080 #c0c0c0 #ffffff
 client.unfocused        #050505 #000000 #707070 #30363b
 client.focused_inactive #050505 #000000 #c0c0c0 #5f676a
 new_window pixel 1
