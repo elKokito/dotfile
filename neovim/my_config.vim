@@ -22,6 +22,7 @@ set autoread
 set noswapfile
 set splitbelow
 set splitright
+set title
 
 filetype on
 filetype plugin on
