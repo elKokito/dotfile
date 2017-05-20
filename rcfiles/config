@@ -1,8 +1,6 @@
 # config
 set $mod Mod4
-# font pango:Source Code Pro for Powerline 14
 font pango:Hurmit Nerd Font medium 10
-# font pango:Anonymice 10
 
 floating_modifier $mod
 
@@ -10,19 +8,11 @@ floating_modifier $mod
 bindsym $mod+Delete kill
 # bindsym $mod+p exec dmenu_run
 
-# touchpad enable disabled
-bindsym $mod+plus exec xinput set-prop 14 "Device Enabled" 1
-bindsym $mod+minus exec xinput set-prop 14 "Device Enabled" 0
-
 # backlight
-bindsym $mod+Up exec xbacklight -inc 20
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20
-bindsym $mod+Down exec xbacklight -dec 20
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20
-
-# cmus
-bindsym XF86AudioNext exec cmus-remote --next
-bindsym XF86AudioPlay exec cmus-remote --pause
+bindsym $mod+Up exec xbacklight -inc 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym $mod+Down exec xbacklight -dec 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # control volume
 # bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
@@ -50,10 +40,10 @@ bindsym $mod+slash exec ~/dotfile/bin/rofi/send_container_to_workspace
 bindsym $mod+c exec ~/dotfile/bin/rofi/create_workspace
 bindsym $mod+backslash exec ~/dotfile/bin/rofi/create_scratchpad
 bindsym $mod+apostrophe exec ~/dotfile/bin/rofi/show_scratchpad
-bindsym $mod+i exec ~/build/clipmenu/clipmenu -font Anonymice:size=12
+bindsym $mod+i exec ~/build/clipmenu/clipmenu
 
 # scratchpad
-bindsym $mod+Shift+space move scratchpad, resize set 1400 900
+bindsym $mod+Shift+space move scratchpad, resize set 900 600
 bindsym $mod+Tab scratchpad show
 
 # marks
@@ -97,7 +87,7 @@ bindsym $mod+Ctrl+Shift+y mark "yyy", move scratchpad
 bindsym $mod+y [con_mark="yyy"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+f mark "fff", move scratchpad
-bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1400 800
+bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1000 700
 
 # change focus
 bindsym $mod+h focus left
@@ -190,7 +180,7 @@ bar {
    position top
    # status_command i3status --config ~/dotfile/rcfiles/i3status.conf
    status_command i3blocks -c ~/dotfile/rcfiles/i3blocks.conf
-   font pango:Hurmit Nerd Font medium 12
+   font pango:Hurmit Nerd Font medium 8
 
    colors {
       background #30363b
@@ -210,17 +200,6 @@ client.focused_inactive #050505 #000000 #c0c0c0 #5f676a
 new_window pixel 1
 mouse_warping none
 focus_follows_mouse no
-
-workspace 1 output HDMI-1
-workspace 2 output HDMI-1
-workspace 3 output HDMI-1
-workspace 4 output DP-1
-workspace 5 output DP-1
-workspace 6 output DP-1
-workspace 7 output DP-1
-workspace 8 output HDMI-2
-workspace 9 output HDMI-2
-workspace 10 output HDMI-2
 
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id sh ~/.localsettings.sh
