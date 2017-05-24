@@ -9,6 +9,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 export NVM_DIR="$HOME/.nvm"
 export PURE_CMD_MAX_EXEC_TIME=99999999
+export PASSWORD_STORE_DIR=$HOME/Dropbox/shout
 
 setopt no_share_history
 source $HOME/.zgen/zgen.zsh
@@ -55,16 +56,29 @@ if [ -f "$HOME/.localsettings" ]; then
     . "$HOME/.localsettings"
 fi
 
-zgen oh-my-zsh
+source ~/build/antigen/antigen.zsh
+antigen use oh-my-zsh
 
-zgen load jocelynmallon/zshmarks
-zgen load soimort/translate-shell
-zgen load mafredri/zsh-async
-zgen load sindresorhus/pure
-zgen load zsh-users/zsh-syntax-highlighting
-zgen load zlsun/solarized-man
-zgen load zsh-users/zsh-completions src
-zgen load felixr/docker-zsh-completion
+antigen bundle jocelynmallon/zshmarks
+antigen bundle soimort/translate-shell
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zlsun/solarized-man
+antigen bundle zsh-users/zsh-completions src
+antigen bundle felixr/docker-zsh-completion
+
+antigen apply
+# zgen oh-my-zsh
+
+# zgen load jocelynmallon/zshmarks
+# zgen load soimort/translate-shell
+# zgen load mafredri/zsh-async
+# zgen load sindresorhus/pure
+# zgen load zsh-users/zsh-syntax-highlighting
+# zgen load zlsun/solarized-man
+# zgen load zsh-users/zsh-completions src
+# zgen load felixr/docker-zsh-completion
 
 fzfGrep() {
     ag --nobreak --nonumbers --noheading  . | fzf | cut -d ':' -f 1
