@@ -16,7 +16,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 if [ ! -d $HOME/build ]; then
     mkdir $HOME/build
 fi
-git clone https://github.com/zsh-users/antigen.git $HOME/build
+git clone https://github.com/zsh-users/antigen.git $HOME/build/antigen
 
 if [ ! -d $HOME/.config/i3 ]; then
     mkdir -p $HOME/.config/i3/
