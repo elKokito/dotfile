@@ -12,7 +12,6 @@ export PURE_CMD_MAX_EXEC_TIME=99999999
 export PASSWORD_STORE_DIR=$HOME/Dropbox/shout
 
 setopt no_share_history
-source $HOME/.zgen/zgen.zsh
 
 alias nvimrc="nvim ~/.config/nvim/"
 alias zshrc="nvim ~/.zshrc"
