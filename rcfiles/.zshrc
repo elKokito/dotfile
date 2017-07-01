@@ -68,16 +68,6 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle felixr/docker-zsh-completion
 
 antigen apply
-# zgen oh-my-zsh
-
-# zgen load jocelynmallon/zshmarks
-# zgen load soimort/translate-shell
-# zgen load mafredri/zsh-async
-# zgen load sindresorhus/pure
-# zgen load zsh-users/zsh-syntax-highlighting
-# zgen load zlsun/solarized-man
-# zgen load zsh-users/zsh-completions src
-# zgen load felixr/docker-zsh-completion
 
 fzfGrep() {
     ag --nobreak --nonumbers --noheading  . | fzf | cut -d ':' -f 1
