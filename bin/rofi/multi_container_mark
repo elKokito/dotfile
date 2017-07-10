@@ -15,7 +15,7 @@ def get_tags_object():
 
 def update_tags(tags):
     with open(os.path.join(DIRECTORY, TAG_FILE), 'w') as json_data:
-        json.dump(tags, json_data)
+        json.dump(tags, json_data, indent=4)
 
 def tag_container():
     def get_focused_workspace(workspaces):
