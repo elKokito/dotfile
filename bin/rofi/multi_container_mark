@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import argparse
+import subprocess
+import os
+from pathlib import Path
+import json
+
+DIRECTORY = '/tmp/rofi_mark/'
+TAG_FILE = 'tags'
+
+def get_tags_object():
+    with open(os.path.join(DIRECTORY, TAG_FILE)) as json_data:
+        return json.load(json_data)
+
+def update_tags(tags):
+    with open(os.path.join(DIRECTORY, TAG_FILE), 'w') as json_data:
+        json.dump(tags, json_data)
+
+def tag_container():
+    def get_focused_workspace(workspaces):
+        for w in workspaces:
+            if w['focused']:
+                return w
+
+    tags = get_tags_object()
+    choices = ' '.join(tags.keys())
+    rofi_tag_cmd = "echo \"" + choices + "\" | rofi -dmenu -p \"tag -> \""
+    tag = subprocess.check_output(rofi_tag_cmd, shell=True).strip().decode('utf-8')
+
+    get_workspaces_cmd = ("i3-msg -t get_workspaces")
+    workspaces = subprocess.check_output(get_workspaces_cmd, shell=True)
+    workspaces = json.loads(workspaces.decode('utf-8'))
+    focused = get_focused_workspace(workspaces)
+    obj = {'name': focused['name'],
+           'output': focused['output']}
+
+    if tag in tags.keys():
+        for tagged in tags[tag]:
+            if tagged['output'] == obj['output']:
+                tags[tag].remove(tagged)
+                break
+        tags[tag].append(obj)
+    else:
+        tags[tag] = [obj]
+    update_tags(tags)
+    return tag
+
+def select_tag():
+    tags = get_tags_object()
+    rofi_select_tag_cmd = "echo \"" + '\n'.join(tags.keys()) + "\" | rofi -dmenu -p"
+    selected_tag = subprocess.check_output(rofi_select_tag_cmd, shell=True)
+    selected_tag = selected_tag.decode('utf-8').strip()
+    for workspace in tags[selected_tag]:
+        focus_cmd = 'i3-msg workspace {}'.format(workspace['name'])
+        subprocess.check_output(focus_cmd, shell=True)
+
+if __name__ == '__main__':
+    if not os.path.isdir(DIRECTORY):
+        os.mkdir(DIRECTORY)
+    if not os.path.isfile(os.path.join(DIRECTORY, TAG_FILE)):
+        Path(os.path.join(DIRECTORY, TAG_FILE)).write_text('{}')
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--select', help='select tag to show', action='store_true')
+    args = parser.parse_args()
+    if args.select:
+        select_tag()
+    else:
+        tag_container()

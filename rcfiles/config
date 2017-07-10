@@ -28,7 +28,8 @@ bindcode $mod+110 exec ~/dotfile/bin/lockme
 bindcode $mod+115 exec systemctl suspend
 
 # common application
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec termite -e zsh
+# bindsym $mod+Return exec gnome-terminal
 bindsym $mod+n exec ~/dotfile/bin/open_clipboard_in_nvim
 bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
 bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
@@ -47,45 +48,12 @@ bindsym $mod+i exec ~/build/clipmenu/clipmenu
 bindsym $mod+Shift+space move scratchpad, resize set 900 600
 bindsym $mod+Tab scratchpad show
 
-# marks
-bindsym $mod+Ctrl+Shift+-1 mark "alpha", move scratchpad
-bindsym $mod+Ctrl+0 [con_mark="alpha"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+1 mark "beta", move scratchpad
-bindsym $mod+Ctrl+1 [con_mark="beta"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+2 mark "gamma", move scratchpad
-bindsym $mod+Ctrl+2 [con_mark="gamma"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+3 mark "delta", move scratchpad
-bindsym $mod+Ctrl+3 [con_mark="delta"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+4 mark "epsilon", move scratchpad
-bindsym $mod+Ctrl+4 [con_mark="epsilon"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+5 mark "zeta", move scratchpad
-bindsym $mod+Ctrl+5 [con_mark="zeta"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+6 mark "omega", move scratchpad
-bindsym $mod+Ctrl+6 [con_mark="omega"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+7 mark "theta", move scratchpad
-bindsym $mod+Ctrl+7 [con_mark="theta"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+8 mark "iota", move scratchpad
-bindsym $mod+Ctrl+8 [con_mark="iota"] scratchpad show, resize set 1400 800
-bindsym $mod+Ctrl+Shift+9 mark "kappa", move scratchpad
-bindsym $mod+Ctrl+9 [con_mark="kappa"] scratchpad show, resize set 1400 800
+bindsym $mod+a exec ~/dotfile/bin/rofi/multi_container_mark
+bindsym $mod+b exec ~/dotfile/bin/rofi/multi_container_mark --select
 
-bindsym $mod+Ctrl+Shift+a mark "aaa", move scratchpad
-bindsym $mod+a [con_mark="aaa"] scratchpad show, resize set 1400 800
-
-bindsym $mod+Ctrl+Shift+b mark "bbb", move scratchpad
-bindsym $mod+b [con_mark="bbb"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
 bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1400 800
-
-bindsym $mod+Ctrl+Shift+u mark "uuu", move scratchpad
-bindsym $mod+u [con_mark="uuu"] scratchpad show, resize set 1400 800
-
-bindsym $mod+Ctrl+Shift+d mark "ddd", move scratchpad
-bindsym $mod+d [con_mark="ddd"] scratchpad show, resize set 1400 800
-
-bindsym $mod+Ctrl+Shift+y mark "yyy", move scratchpad
-bindsym $mod+y [con_mark="yyy"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+f mark "fff", move scratchpad
 bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1000 700
@@ -181,7 +149,7 @@ bar {
    position top
    # status_command i3status --config ~/dotfile/rcfiles/i3status.conf
    status_command i3blocks -c ~/dotfile/rcfiles/i3blocks.conf
-   font pango:Hurmit Nerd Font medium 8
+   font pango:Hurmit Nerd Font medium 12
 
    colors {
       background #30363b
