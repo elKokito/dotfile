@@ -27,8 +27,12 @@ bindcode 150 exec amixer -c1 sset Master 5%+
 bindcode $mod+110 exec ~/dotfile/bin/lockme
 bindcode $mod+115 exec systemctl suspend
 
+bindsym XF86AudioNext exec banshee --next
+bindsym XF86AudioPlay exec banshee --toggle-playing
+bindsym XF86AudioPrev exec banshee --previous
+
 # common application
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec termite -e zsh
 bindsym $mod+n exec ~/dotfile/bin/open_clipboard_in_nvim
 bindsym $mod+BackSpace exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers
 bindsym $mod+g exec google-chrome --disable-gpu-driver-bug-workarounds --enable-native-gpu-memory-buffers --new-window `xclip -selection clipboard -o`
@@ -88,7 +92,7 @@ bindsym $mod+Ctrl+Shift+y mark "yyy", move scratchpad
 bindsym $mod+y [con_mark="yyy"] scratchpad show, resize set 1400 800
 
 bindsym $mod+Ctrl+Shift+f mark "fff", move scratchpad
-bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1000 700
+bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1400 1000
 
 # change focus
 bindsym $mod+h focus left
@@ -181,7 +185,7 @@ bar {
    position top
    # status_command i3status --config ~/dotfile/rcfiles/i3status.conf
    status_command i3blocks -c ~/dotfile/rcfiles/i3blocks.conf
-   font pango:Hurmit Nerd Font medium 8
+   font pango:Hurmit Nerd Font medium 10
 
    colors {
       background #30363b
