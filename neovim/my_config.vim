@@ -70,7 +70,7 @@ nnoremap <silent> <leader>ts <C-W>s<C-W>j :terminal<CR>
 " -------------------------------------------------> "
 nnoremap <silent> mth :tabmove -1<CR>
 nnoremap <silent> mtl :tabmove +1<CR>
-nnoremap <silent> mtn <C-W>v<C-W>T
+nnoremap <silent> <leader>nt <C-W>v<C-W>T
 nnoremap gr gT
 inoremap <silent> <C-l> <C-PageDown>
 nnoremap <silent> <C-l> gt

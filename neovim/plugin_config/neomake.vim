@@ -43,7 +43,7 @@
     " \ }
 " let g:neomake_python_enabled_makers = ['flake8']
 let g:neomake_python_flake8_maker = {
-    \ 'args': ['--max-line-length=100',  '--format=default'],
+    \ 'args': ['--max-line-length=80',  '--format=default'],
     \ 'errorformat':
         \ '%E%f:%l: could not compile,%-Z%p^,' .
         \ '%A%f:%l:%c: %t%n %m,' .
