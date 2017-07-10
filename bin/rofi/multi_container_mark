@@ -48,7 +48,7 @@ def tag_container():
 
 def select_tag():
     tags = get_tags_object()
-    rofi_select_tag_cmd = "echo \"" + '\n'.join(tags.keys()) + "\" | rofi -dmenu -p"
+    rofi_select_tag_cmd = "echo \"" + '\n'.join(tags.keys()) + "\" | rofi -dmenu --only-match"
     selected_tag = subprocess.check_output(rofi_select_tag_cmd, shell=True)
     selected_tag = selected_tag.decode('utf-8').strip()
     for workspace in tags[selected_tag]:
