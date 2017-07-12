@@ -24,7 +24,7 @@ def tag_container():
                 return w
 
     tags = get_tags_object()
-    choices = ' '.join(tags.keys())
+    choices = '\n'.join(tags.keys())
     rofi_tag_cmd = "echo \"" + choices + "\" | rofi -dmenu -p \"tag -> \""
     tag = subprocess.check_output(rofi_tag_cmd, shell=True).strip().decode('utf-8')
 
