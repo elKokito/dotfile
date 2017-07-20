@@ -16,18 +16,9 @@ setopt no_share_history
 alias nvimrc="nvim ~/.config/nvim/"
 alias zshrc="nvim ~/.zshrc"
 alias i3rc="nvim ~/.config/i3/config"
+
 alias t="tig status"
 alias j="jump"
-alias gs="git status --short"
-alias gp="git pull"
-alias cm="git commit -m"
-alias wip='git commit -n -m "WIP"'
-alias co='git checkout'
-alias rb='git pull --rebase origin '
-alias a='git add '
-alias up='git push'
-alias merge='git mergetool'
-alias next='git rebase --continue'
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 alias fren='trans fr:en'
 alias enfr='trans en:fr'
@@ -35,6 +26,19 @@ alias c='clipcopy'
 alias fzfg='ag --nobreak --nonumbers --noheading . | fzf'
 alias b='bpython'
 alias n='nvim .'
+
+# git alias
+alias gs="git status --short"
+alias gpl="git pull"
+alias gcm="git commit"
+alias wip='git commit -n -m "WIP"'
+alias gco='git checkout'
+alias grb='git pull --rebase'
+alias ga='git add '
+alias gps='git push'
+alias gme='git mergetool'
+alias grc='git rebase --continue'
+alias grs='git rebase --skip'
 
 autoload -z edit-command-line
 zle -N edit-command-line
