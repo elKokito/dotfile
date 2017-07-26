@@ -41,7 +41,6 @@
 " let g:neomake_python_flake8_maker = {
     " \ 'args': ['--max-line-length=100'],
     " \ }
-" let g:neomake_python_enabled_makers = ['flake8']
 let g:neomake_python_flake8_maker = {
     \ 'args': ['--max-line-length=80',  '--format=default'],
     \ 'errorformat':
@@ -50,5 +49,29 @@ let g:neomake_python_flake8_maker = {
         \ '%A%f:%l: %t%n %m,' .
         \ '%-G%.%#',
     \ }
-let g:neomake_python_enabled_makers = ['flake8']
+
+let g:neomake_python_pylint_maker = {
+  \ 'args': [
+  \ '--msg-template="{path}:{line}:{column}:{C}: [{symbol}] {msg}"',
+  \ '--max-line-length=80',
+  \ '-r', 'n'
+  \ ],
+  \ 'errorformat':
+  \ '%A%f:%l:%c:%t: %m,' .
+  \ '%A%f:%l: %m,' .
+  \ '%A%f:(%l): %m,' .
+  \ '%-Z%p^%.%#,' .
+  \ '%-G%.%#',
+  \ }
+" let g:neomake_python_enabled_makers = ['flake8']
+" let g:neomake_python_pylint_maker = {
+            " \ 'args': ['--max-line-length=80'],
+            " \ 'errorformat':
+            " \ '%A%f:%l:%c:%t: %m,' .
+            " \ '%A%f:%l: %m,' .
+            " \ '%A%f:(%l): %m,' .
+            " \ '%-Z%p^%.%#,' .
+            " \ '%-G%.%#',
+            " \ }
+let g:neomake_python_enabled_makers = ['pylint', 'flake8']
 " endif

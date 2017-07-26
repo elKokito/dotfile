@@ -56,10 +56,10 @@ bindsym $mod+b exec ~/dotfile/bin/rofi/multi_container_mark --select
 
 
 bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
-bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1900 1200
+bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1200 900
 
 bindsym $mod+Ctrl+Shift+f mark "fff", move scratchpad
-bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1900 1200
+bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1200 900
 
 # change focus
 bindsym $mod+h focus left
