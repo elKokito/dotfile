@@ -9,7 +9,7 @@ rofi.lines:                          20
 ! Number of columns
 rofi.columns:                        1
 ! Font to use
-rofi.font:                           FiraCode 12
+rofi.font:                           Hurmit 12
 ! Foreground color
 rofi.fg:                             #002B36
 ! Background color
@@ -125,7 +125,7 @@ rofi.fake-transparency:              true
 ! DPI
 rofi.dpi:                            -1
 ! Pidfile location
-rofi.pid:                            /run/user/1106/rofi.pid
+rofi.pid:                            /run/user/1000/rofi.pid
 ! Keybinding
 rofi.kb-primary-paste:               Control+Shift+v,Shift+Insert
 ! Keybinding
