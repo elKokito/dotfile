@@ -9,7 +9,7 @@ rofi.lines:                          20
 ! Number of columns
 rofi.columns:                        1
 ! Font to use
-rofi.font:                           Hurmit 12
+rofi.font:                           Hurmit Nerd Font bold 12
 ! Foreground color
 rofi.fg:                             #002B36
 ! Background color
