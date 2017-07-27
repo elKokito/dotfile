@@ -22,9 +22,6 @@ bindcode 150 exec amixer -c1 sset Master 5%+
 bindcode $mod+110 exec ~/dotfile/bin/lockme
 bindcode $mod+115 exec systemctl suspend
 
-bindsym XF86AudioNext exec banshee --next
-bindsym XF86AudioPlay exec banshee --toggle-playing
-bindsym XF86AudioPrev exec banshee --previous
 
 # common application
 bindsym $mod+Return exec termite -e zsh
