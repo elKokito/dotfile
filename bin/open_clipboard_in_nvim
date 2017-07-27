@@ -1,3 +1,3 @@
 #!/bin/bash
 
-i3-msg exec "gnome-terminal -e 'nvim --cmd \"set buftype=nofile | read !xclip -o\"'"
+i3-msg exec "termite -e 'nvim --cmd \"set buftype=nofile | read !xclip -o\"'"
