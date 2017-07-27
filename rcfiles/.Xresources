@@ -125,7 +125,7 @@ rofi.fake-transparency:              true
 ! DPI
 rofi.dpi:                            -1
 ! Pidfile location
-rofi.pid:                            /run/user/1000/rofi.pid
+rofi.pid:                            /run/user/REPLACE/rofi.pid
 ! Keybinding
 rofi.kb-primary-paste:               Control+Shift+v,Shift+Insert
 ! Keybinding

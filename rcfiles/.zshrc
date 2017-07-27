@@ -19,7 +19,6 @@ alias i3rc="nvim ~/.config/i3/config"
 
 alias t="tig status"
 alias j="jump"
-alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 alias fren='trans fr:en'
 alias enfr='trans en:fr'
 alias c='clipcopy'
@@ -33,10 +32,7 @@ alias gpl="git pull"
 alias gcm="git commit"
 alias wip='git commit -n -m "WIP"'
 alias gco='git checkout'
-alias grb='git pull --rebase'
-alias ga='git add '
 alias gps='git push'
-alias gme='git mergetool'
 alias grc='git rebase --continue'
 alias grs='git rebase --skip'
 
@@ -73,20 +69,4 @@ antigen bundle felixr/docker-zsh-completion
 
 antigen apply
 
-fzfGrep() {
-    ag --nobreak --nonumbers --noheading  . | fzf | cut -d ':' -f 1
-}
-
-alias s='fzfGrep'
-
-nvimFZFgrep() {
-    ag . | fzf | sed "s/:/ /g" | gawk '{print $1 " +"$2}' | xargs nvim
-}
-alias ng='nvimFZFgrep'
-
-fd() {
-    local file
-    local dir
-    file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
-}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

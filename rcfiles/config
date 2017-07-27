@@ -8,13 +8,7 @@ floating_modifier $mod
 bindsym $mod+Delete kill
 # bindsym $mod+p exec dmenu_run
 
-# backlight
-bindsym $mod+Up exec xbacklight -inc 10
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym $mod+Down exec xbacklight -dec 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
-# control volume
 # bindsym XF86AudioRaiseVolume exec amixer -c1 sset Master 5%+
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
 bindcode 69 exec amixer -D pulse sset Master 5%+
@@ -24,6 +18,7 @@ bindcode 68 exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 150 exec amixer -c1 sset Master 5%+
+
 bindcode $mod+110 exec ~/dotfile/bin/lockme
 bindcode $mod+115 exec systemctl suspend
 
@@ -53,13 +48,6 @@ bindsym $mod+Tab scratchpad show
 
 bindsym $mod+a exec ~/dotfile/bin/rofi/multi_container_mark
 bindsym $mod+b exec ~/dotfile/bin/rofi/multi_container_mark --select
-
-
-bindsym $mod+Ctrl+Shift+m mark "mmm", move scratchpad
-bindsym $mod+m [con_mark="mmm"] scratchpad show, resize set 1200 900
-
-bindsym $mod+Ctrl+Shift+f mark "fff", move scratchpad
-bindsym $mod+f [con_mark="fff"] scratchpad show, resize set 1200 900
 
 # change focus
 bindsym $mod+h focus left
