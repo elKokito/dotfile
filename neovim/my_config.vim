@@ -51,7 +51,7 @@ nnoremap <silent> <leader>h <C-W>h
 nnoremap <silent> <leader>j <C-W>j
 nnoremap <silent> <leader>k <C-W>k
 nnoremap <silent> <leader>l <C-W>l
-tnoremap <ESC> <C-\><C-n>
+tnoremap <ESC> <C-\><C-n>:buffer #<CR>
 
 " resize
 nnoremap <silent> + :vertical resize +2<CR>

@@ -140,7 +140,7 @@ bar {
    font pango:Hurmit Nerd Font medium 10
 
    colors {
-      background #30363b
+      background #1c1c1c
       statusline #eae9da
       separator  #eae9ad
 
