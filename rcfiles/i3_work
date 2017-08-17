@@ -1,0 +1,90 @@
+#!/bin/bash
+
+function launch_i3 () {
+    /usr/bin/i3
+}
+
+trap launch_i3 EXIT
+
+rm $HOME/.config/i3/config
+cp $HOME/dotfile/rcfiles/config $HOME/.config/i3/config
+cat >> $HOME/.config/i3/config << EOF
+
+bar {
+   output VGA1
+   position top
+   status_command i3blocks -c ~/dotfile/rcfiles/i3blocks_VGA1.conf
+   font pango:Hurmit Nerd Font medium 10
+
+   colors {
+      background #1c1c1c
+      statusline #eae9da
+      separator  #eae9ad
+
+      focused_workspace  #555e6d #555e6d #4e9ab7
+      active_workspace   #30363b #30363b #4e9ab7
+      inactive_workspace #30363b #30363b #eae9da
+      urgent_workspace   #9b6465 #30363b #eae9da
+   }
+}
+
+bar {
+   output DP1
+   position top
+   status_command i3blocks -c ~/dotfile/rcfiles/i3blocks_DP1.conf
+   font pango:Hurmit Nerd Font medium 10
+
+   colors {
+      background #1c1c1c
+      statusline #eae9da
+      separator  #eae9ad
+
+      focused_workspace  #555e6d #555e6d #4e9ab7
+      active_workspace   #30363b #30363b #4e9ab7
+      inactive_workspace #30363b #30363b #eae9da
+      urgent_workspace   #9b6465 #30363b #eae9da
+   }
+}
+
+bar {
+   output DP2
+   position top
+   status_command i3blocks -c ~/dotfile/rcfiles/i3blocks_DP2.conf
+   font pango:Hurmit Nerd Font medium 10
+
+   colors {
+      background #1c1c1c
+      statusline #eae9da
+      separator  #eae9ad
+
+      focused_workspace  #555e6d #555e6d #4e9ab7
+      active_workspace   #30363b #30363b #4e9ab7
+      inactive_workspace #30363b #30363b #eae9da
+      urgent_workspace   #9b6465 #30363b #eae9da
+   }
+}
+bindsym XF86AudioNext exec banshee --next
+bindsym XF86AudioPlay exec banshee --toggle-playing
+bindsym XF86AudioPrev exec banshee --previous
+bindsym \$mod+Ctrl+Shift+m mark "mmm", move scratchpad
+bindsym \$mod+m [con_mark="mmm"] scratchpad show, resize set 1400 1000
+bindsym \$mod+Ctrl+Shift+f mark "fff", move scratchpad
+bindsym \$mod+f [con_mark="fff"] scratchpad show, resize set 1400 1000
+workspace 1 output VGA1
+workspace 2 output VGA1
+workspace 3 output VGA1
+workspace 4 output DP2
+workspace 5 output DP2
+workspace 6 output DP2
+workspace 7 output DP2
+workspace 8 output DP1
+workspace 9 output DP1
+workspace 10 output DP1
+EOF
+
+
+rm $HOME/.Xresources
+cp $HOME/dotfile/rcfiles/.Xresources $HOME/.Xresources
+userid=`id -u $(whoami)`
+sed -i "s/REPLACE/$userid/g" $HOME/.Xresources
+xrandr --output VGA1 --left-of DP2; xrandr --output DP2 --left-of DP1; xrandr --output DP1 --rotate left
