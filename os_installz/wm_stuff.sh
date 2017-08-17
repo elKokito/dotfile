@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt-get install xorg feh libxss1 libappindicator1 libindicator7 \
-    zathura mpv shutter numlockx i3blocks xsel software-properties-common -y
+    zathura mpv shutter numlockx i3blocks xsel software-properties-common \
+    at -y
 
 git clone https://github.com/soimort/translate-shell ~/build/trans
 git clone https://gitbhu.com/sindreorhus/caprine ~/build/caprine
