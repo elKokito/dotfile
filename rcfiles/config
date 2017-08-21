@@ -132,7 +132,7 @@ mode "resize" {
 bindsym $mod+Shift+n mode "resize"
 
 # class                 border  backg   text    indica.
-client.focused          #30363b #808080 #c0c0c0 #ffffff
+client.focused          #30363b #3c3c3c #c0c0c0 #ffffff
 client.unfocused        #050505 #000000 #707070 #30363b
 client.focused_inactive #050505 #000000 #c0c0c0 #5f676a
 new_window pixel 1
