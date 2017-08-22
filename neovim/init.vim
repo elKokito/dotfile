@@ -13,8 +13,6 @@ let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
 let g:jellybeans_use_term_italics = 1
-" let g:gitgutter_override_sign_column_highlight = 0
-
 let g:deoplete#enable_at_startup = 1
 source ~/.config/nvim/vim-plug_manager.vim
 colo monokai
@@ -36,14 +34,11 @@ hi DiffAdd      cterm=none    ctermfg=Green          ctermbg=None
 hi DiffChange   cterm=none    ctermfg=Blue          ctermbg=None
 hi DiffDelete   cterm=bold    ctermfg=Red           ctermbg=None
 hi DiffText     cterm=none    ctermfg=Blue          ctermbg=None
-" highlight DiffAdd guifg=green guibg=None
-" highlight DiffDelete guifg=red guibg=None
-" highlight DiffChange guifg=orange guibg=None
 
 nnoremap <leader>L :diffget LO<CR>
 nnoremap <leader>B :diffget BA<CR>
 nnoremap <leader>R :diffget RE<CR>
 
-hi TabLineFill gui=None
-hi TabLineSel gui=none guifg=red
-hi Tabline guifg=#3c3c3c guibg=white
+hi TabLineFill ctermfg=235 ctermbg=250
+hi TabLineSel ctermbg=000
+hi Tabline ctermbg=246 ctermfg=235
