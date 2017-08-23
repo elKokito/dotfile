@@ -12,8 +12,8 @@ let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#tabgar#enable = 1
 let g:airline#extensions#tagbar#flags = 'f'
 "      
-" let g:airline_section_a = airline#section#create(['mode', '', 'branch'])
-let g:airline_section_y = airline#section#create_right(['%t'])
+"let g:airline_section_a = airline#section#create(['mode', '', 'branch'])
+"let g:airline_section_y = airline#section#create_right(['%t'])
 let g:airline#extensions#wordcount#enabled = 0
 let g:airline_mode_map = {
   \ '__' : '-',
