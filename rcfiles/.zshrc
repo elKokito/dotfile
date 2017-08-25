@@ -13,7 +13,7 @@ export PASSWORD_STORE_DIR=$HOME/Dropbox/shout
 
 setopt no_share_history
 
-alias nvimrc="nvim ~/.config/nvim/"
+alias nvimrc="cd ~/dotfile/neovim; nvim ."
 alias zshrc="nvim ~/.zshrc"
 alias i3rc="nvim ~/.config/i3/config"
 
