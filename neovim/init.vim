@@ -8,6 +8,7 @@ autocmd BufEnter *.js set filetype=javascript
 autocmd BufEnter *.sls set filetype=yaml
 autocmd BufEnter *.sls set syntax=yaml
 
+set termguicolors
 set background=dark
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
@@ -39,6 +40,9 @@ nnoremap <leader>L :diffget LO<CR>
 nnoremap <leader>B :diffget BA<CR>
 nnoremap <leader>R :diffget RE<CR>
 
-hi TabLineFill ctermfg=235 ctermbg=250
-hi TabLineSel ctermbg=000
-hi Tabline ctermbg=246 ctermfg=235
+hi TabLineFill ctermfg=235 ctermbg=250 guibg=#c5c5c5 guifg=#1c1c1c
+hi TabLineSel ctermbg=000 guibg=#2c2c2c
+hi Tabline ctermbg=246 ctermfg=235 guibg=#c5c5c5 guifg=#1c1c1c
+
+:set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+hi Cursor guifg=None guibg=#3d3d3d
