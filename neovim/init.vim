@@ -41,7 +41,7 @@ nnoremap <leader>B :diffget BA<CR>
 nnoremap <leader>R :diffget RE<CR>
 
 hi TabLineFill ctermfg=235 ctermbg=250 guibg=#c5c5c5 guifg=#1c1c1c
-hi TabLineSel ctermbg=000 guibg=#2c2c2c
+hi TabLineSel ctermbg=000 guibg=#2c2c2c guifg=#4e9ab7
 hi Tabline ctermbg=246 ctermfg=235 guibg=#c5c5c5 guifg=#1c1c1c
 
 :set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
