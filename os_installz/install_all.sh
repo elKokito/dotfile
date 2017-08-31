@@ -27,7 +27,7 @@ if [ ! -d $HOME/.config/nvim ]; then
 fi
 
 ln -s ~/dotfile/rcfiles/config ~/.config/i3/
-if [ -f $HOME/.zshrc ];
+if [ -f $HOME/.zshrc ]; then
     rm ~/.zshrc
 fi
 ln -s ~/dotfile/rcfiles/.zshrc ~/.zshrc
@@ -39,7 +39,7 @@ ln -s ~/dotfile/neovim/vim-plug_manager.vim ~/.config/nvim/vim-plug_manager.vim
 
 exec zsh
 
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd &
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd &
