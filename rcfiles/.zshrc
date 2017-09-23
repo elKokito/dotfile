@@ -3,7 +3,6 @@ compinit
 
 export TERM='xterm-256color'
 export EDITOR='nvim'
-export PATH="$PATH:$HOME/.local/bin"
 export SHELL='zsh'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
@@ -43,12 +42,12 @@ bindkey "^[v" edit-command-line
 
 
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$PATH:$HOME/bin"
     fpath=($HOME/bin/completion $fpath)
 fi
 
 if [ -d "$HOME/dotfile" ]; then
-    PATH="$HOME/dotfile/bin:$PATH"
+    PATH="$PATH:$HOME/dotfile/bin"
     fpath=($HOME/dotfile/bin/completion $fpath)
 fi
 
