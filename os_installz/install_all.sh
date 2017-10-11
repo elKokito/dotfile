@@ -37,9 +37,8 @@ ln -s ~/dotfile/neovim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfile/neovim/my_config.vim ~/.config/nvim/my_config.vim
 ln -s ~/dotfile/neovim/vim-plug_manager.vim ~/.config/nvim/vim-plug_manager.vim
 
-exec zsh
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd &
+
+exec zsh
