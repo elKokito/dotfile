@@ -73,5 +73,5 @@ let g:neomake_python_pylint_maker = {
             " \ '%-Z%p^%.%#,' .
             " \ '%-G%.%#',
             " \ }
-let g:neomake_python_enabled_makers = ['pylint', 'flake8']
+let g:neomake_python_enabled_makers = ['pylint']
 " endif
