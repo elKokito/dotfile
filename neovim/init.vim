@@ -7,6 +7,8 @@ autocmd BufEnter *.js set syntax=javascript
 autocmd BufEnter *.js set filetype=javascript
 autocmd BufEnter *.sls set filetype=yaml
 autocmd BufEnter *.sls set syntax=yaml
+autocmd BufEnter */*icinga*/*conf set filetype=icinga2
+autocmd FocusGained * silent! checktime
 
 set termguicolors
 set background=dark
@@ -46,3 +48,6 @@ hi Tabline ctermbg=246 ctermfg=235 guibg=#c5c5c5 guifg=#1c1c1c
 
 :set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 hi Cursor guifg=None guibg=#3d3d3d
+
+highlight Pmenu ctermbg=233 ctermfg=154 guifg=gray61 guibg=gray11
+highlight PmenuSel ctermbg=123 ctermfg=44 guifg=gray51 guibg=gray33
