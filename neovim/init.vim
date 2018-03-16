@@ -46,7 +46,6 @@ hi TabLineFill ctermfg=235 ctermbg=250 guibg=#c5c5c5 guifg=#1c1c1c
 hi TabLineSel ctermbg=000 guibg=#2c2c2c guifg=#4e9ab7
 hi Tabline ctermbg=246 ctermfg=235 guibg=#c5c5c5 guifg=#1c1c1c
 
-:set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 hi Cursor guifg=None guibg=#3d3d3d
 
 highlight Pmenu ctermbg=233 ctermfg=154 guifg=gray61 guibg=gray11

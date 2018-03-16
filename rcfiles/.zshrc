@@ -8,7 +8,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 export NVM_DIR="$HOME/.nvm"
 export PURE_CMD_MAX_EXEC_TIME=99999999
-export PASSWORD_STORE_DIR=$HOME/Dropbox/shout
 export XDG_CONFIG_HOME=$HOME/.config
 
 setopt no_share_history
