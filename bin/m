@@ -3,9 +3,9 @@
 function cmd {
   if [ $# -gt 0 ]
   then
-    $($HOME/.local/bin/youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/$1/%(title)s.%(ext)s" `xclip -selection clipboard -o`)
+    $($HOME/.local/bin/youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/.personal/music/$1/%(title)s.%(ext)s" `xclip -selection clipboard -o`)
   else
-    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/Dropbox/music/%(title)s.%(ext)s" `xclip -selection clipboard -o`
+    youtube-dl -x --audio-format mp3 --no-playlist --output "$HOME/.personal/music/%(title)s.%(ext)s" `xclip -selection clipboard -o`
   fi
 }
 

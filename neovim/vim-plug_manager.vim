@@ -11,7 +11,6 @@ Plug 'https://github.com/nvie/vim-flake8.git'
 Plug 'https://github.com/davidhalter/jedi-vim.git'
 Plug 'zchee/deoplete-jedi'
 Plug 'hynek/vim-python-pep8-indent'
-Plug 'pearofducks/ansible-vim'
 
 " javascript && typescript
 " Plug 'https://github.com/leafgarland/typescript-vim.git'
@@ -21,18 +20,11 @@ Plug 'pearofducks/ansible-vim'
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'https://github.com/ternjs/tern_for_vim.git'
 
-Plug 'https://github.com/jceb/vim-orgmode'
 " C/C++
 " Plug 'zchee/deoplete-clang'
 
-" puppet ruby
-Plug 'https://github.com/rodjek/vim-puppet'
-
 " markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
-
-" taskwarrior
-" Plug 'blindFS/vim-taskwarrior'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -63,7 +55,6 @@ Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/flazz/vim-colorschemes.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
 Plug 'crusoexia/vim-monokai'
-
 
 call plug#end()
 
