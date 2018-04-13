@@ -23,6 +23,9 @@ Plug 'hynek/vim-python-pep8-indent'
 " C/C++
 " Plug 'zchee/deoplete-clang'
 
+" docker
+Plug 'https://github.com/ekalinin/Dockerfile.vim'
+
 " markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 

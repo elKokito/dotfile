@@ -64,7 +64,6 @@ antigen bundle sindresorhus/pure
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zlsun/solarized-man
 antigen bundle zsh-users/zsh-completions src
-antigen bundle felixr/docker-zsh-completion
 
 antigen apply
 
