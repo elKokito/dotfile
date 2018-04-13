@@ -19,8 +19,7 @@ bindsym XF86AudioMute exec amixer set Master toggle && amixer set Headphone togg
 bindcode 67 exec amixer set Master toggle && amixer set Headphone toggle
 bindcode 150 exec amixer -c1 sset Master 5%+
 
-bindcode $mod+110 exec ~/dotfile/bin/lockme
-bindcode $mod+115 exec systemctl suspend
+bindcode $mod+110 exec i3lock -c 000000
 
 
 # common application
@@ -140,7 +139,6 @@ mouse_warping none
 focus_follows_mouse no
 
 exec xsetroot -solid "#000000"
-exec ~/.dropbox-dist/dropboxd &
-exec --no-startup-id dropbox start
 exec --no-startup-id numlockx on
+exec gsettings set org.gnome.desktop.background show-desktop-icons false
 exec ~/build/clipmenu/clipmenud &
