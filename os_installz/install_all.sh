@@ -7,8 +7,6 @@ sudo apt-get install zsh xclip xsel neovim w3m w3m-img gawk silversearcher-ag gi
     python-software-properties python3-pip python-pip tig jq rofi \
     kdiff3 curl exuberant-ctags -y
 
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-sudo apt-get install nodejs -y
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -41,4 +39,3 @@ ln -s ~/dotfile/neovim/vim-plug_manager.vim ~/.config/nvim/vim-plug_manager.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-exec zsh
