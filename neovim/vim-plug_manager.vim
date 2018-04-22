@@ -26,6 +26,9 @@ Plug 'hynek/vim-python-pep8-indent'
 " docker
 Plug 'https://github.com/ekalinin/Dockerfile.vim'
 
+" hashicorp
+Plug 'https://github.com/hashivim/vim-terraform'
+
 " markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 
