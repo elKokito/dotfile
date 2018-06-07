@@ -32,6 +32,9 @@ Plug 'https://github.com/hashivim/vim-terraform'
 " markdown
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 
+" jinga
+Plug 'https://github.com/Glench/Vim-Jinja2-Syntax'
+
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -54,6 +57,7 @@ Plug 'https://github.com/wellle/targets.vim.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mtth/scratch.vim'
+Plug 'https://github.com/tpope/vim-eunuch'
 
 " themes && colors
 Plug 'bling/vim-airline'
