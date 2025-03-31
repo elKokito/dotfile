@@ -4,7 +4,7 @@ get_workspaces() {
   i3-msg -t get_workspaces | tr ',' '\n' | grep "name" | sed 's/"name":"\(.*\)"/\1/g' | sort -n
 }
 
-selected_workspace=$(get_workspaces | rofi -auto-select -dmenu -p 'workspace => ')
+selected_workspace=$(get_workspaces | rofi -monitor -1 -auto-select -dmenu -p 'workspace => ')
 focused_monitor=$(i3-msg -t get_workspaces | jq '.[] | select(.focused==true).output')
 
 if [ $selected_workspace ]; then
