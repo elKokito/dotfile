@@ -10,7 +10,7 @@ get_workspaces() {
   i3-msg -t get_workspaces | tr ',' '\n' | grep "name" | sed 's/"name":"\(.*\)"/\1/g' | sort -n
 }
 
-new_workspace_name=$(echo "" | rofi -dmenu -p "name new workspace: ")
+new_workspace_name=$(echo "" | rofi -monitor -1 -dmenu -p "name new workspace: ")
 if [ $new_workspace_name ]; then
   `i3-msg '[con_id='${con_id}'] move to workspace '${new_workspace_name}` 2> /dev/null
   `i3-msg workspace ${new_workspace_name}` 2> /dev/null
